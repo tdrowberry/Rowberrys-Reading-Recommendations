@@ -55,7 +55,7 @@ const server = createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`\n  Rowberry's Reading Recs`);
+  console.log(`\n  Rowberrys Reading Reviews`);
   console.log(`  Serving ${ROOT}`);
   console.log(`  →  http://localhost:${PORT}\n`);
   console.log(`  Press Ctrl+C to stop.\n`);

@@ -1,5 +1,5 @@
 /* =============================================================================
-   Rowberry's Reading Recs — page logic
+   Rowberrys Reading Reviews — page logic
    Plain browser JavaScript, no framework, no build step.
    Reads window.SITE_DATA (from assets/site-data.js) and renders:
      • the four shelf tiles on the home page

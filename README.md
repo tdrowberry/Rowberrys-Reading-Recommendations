@@ -1,4 +1,4 @@
-# Rowberry's Reading Recs
+# Rowberrys Reading Reviews
 
 A small, warm, static website that shows your book recommendations, organized
 into four shelves: **Professional**, **Junior**, **High School**, and **Adult**.
