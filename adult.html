@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adult Level &mdash; Rowberry's Reading Recs</title>
+  <meta name="description" content="Adult reading recommendations from Tyler Rowberry: long fantasy, science fiction, war history, and a little theology.">
+  <meta name="theme-color" content="#f3ead6">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Adult Level — Rowberry's Reading Recs">
+  <meta property="og:description" content="Long fantasy, science fiction, and history. Settle in.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2335533f' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 5.5C10 4 6.5 3.5 4 4v14c2.5-.5 6 0 8 1.5 2-1.5 5.5-2 8-1.5V4c-2.5-.5-6 0-8 1.5Z'/%3E%3Cpath d='M12 5.5v14'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-category="adult">
+  <a class="skip-link" href="#main">Skip to the books</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__photo" src="assets/img/lemur-logo.jpg" alt="" width="34" height="34">
+        <span>Rowberry's Reading Recs</span>
+      </a>
+      <nav class="site-nav" aria-label="Book shelves">
+        <a href="professional.html">Professional</a>
+        <a href="junior.html">Junior</a>
+        <a href="highschool.html">High School</a>
+        <a href="adult.html" aria-current="page">Adult</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <header class="cat-head">
+      <p class="cat-head__eyebrow">Shelf IV</p>
+      <h1>Adult Level</h1>
+      <!-- EDIT: shelf blurb — one line under the title. Change freely. -->
+      <p class="cat-head__blurb">Long fantasy, science fiction, and history. Settle in.</p>
+    </header>
+
+    <div class="toolbar" data-toolbar hidden>
+      <span class="toolbar__count" data-count></span>
+      <label class="switch">
+        <input type="checkbox" data-must>
+        <span class="switch__track" aria-hidden="true"></span>
+        <span class="switch__label">Must-reads only</span>
+      </label>
+      <span class="toolbar__group">
+        <label for="sort">Sort</label>
+        <select id="sort" data-sort>
+          <option value="rating-desc" selected>Rating, high to low</option>
+          <option value="rating-asc">Rating, low to high</option>
+          <option value="shelf">Shelf order</option>
+          <option value="title">Title A&ndash;Z</option>
+          <option value="author">Author A&ndash;Z</option>
+        </select>
+      </span>
+      <span class="toolbar__group">
+        <span id="view-label">View</span>
+        <span class="view-toggle" role="group" aria-labelledby="view-label">
+          <button type="button" class="view-toggle__btn" data-view-btn="card" aria-pressed="true">Cards</button>
+          <button type="button" class="view-toggle__btn" data-view-btn="list" aria-pressed="false">List</button>
+        </span>
+      </span>
+    </div>
+
+    <ul class="book-grid" data-grid>
+      <noscript><li class="book-grid__empty">This shelf needs JavaScript enabled to show its books.</li></noscript>
+    </ul>
+  </main>
+
+  <hr class="grain-rule" aria-hidden="true">
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <span>Rowberry's Reading Recs</span>
+      <span class="dot" aria-hidden="true">&bull;</span>
+      <span>A personal library, shared with friends and family</span>
+      <span class="dot" aria-hidden="true">&bull;</span>
+      <span>Ratings and reviews from Goodreads &middot; covers from
+        <a href="https://openlibrary.org" rel="noopener">Open Library</a>
+        &middot; <span data-year>2026</span></span>
+    </div>
+  </footer>
+
+  <script src="assets/site-data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
