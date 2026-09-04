@@ -1,5 +1,5 @@
-Cover lookup report — 2026-09-04T18:39:52.174Z
-0 matched, 3 without a cover (these use the lettered placeholder)
+Cover lookup report — 2026-09-04T22:58:48.633Z
+18 matched, 3 without a cover (these use the lettered placeholder)
 
 WITHOUT COVER:
   - The Business Ethics Field Guide — Brad Agle
@@ -7,4 +7,21 @@ WITHOUT COVER:
   - Depths of Vanalf (Grimnir Chronicles #1) — Brady Hunsaker
 
 MATCHED THIS RUN:
-  (none new)
+  - Songs of the Dead (The Strata Wars #1) — Brandon Sanderson  ->  cover_i 15237276  (title+author "Songs of the Dead")
+  - A Game of Thrones: The Graphic Novel, Vol. 1 — Daniel Abraham  ->  cover_i 14646189  (title+author "A Game of Thrones")
+  - Infinity Son (Infinity Cycle #1) — Adam Silvera  ->  cover_i 9258824  (title+author "Infinity Son")
+  - Furies of Calderon (Codex Alera #1) — Jim Butcher  ->  cover_i 284243  (title+author "Furies of Calderon (Codex Alera #1)")
+  - Hawksong (The Kiesha'ra #1) — Amelia Atwater-Rhodes  ->  cover_i 244303  (title+author "Hawksong")
+  - The High King's Tomb (Green Rider #3) — Kristen Britain  ->  cover_i 1413208  (title+author "The High King's Tomb")
+  - There Is No Antimemetics Division — qntm  ->  cover_i 11457905  (title+author "There Is No Antimemetics Division")
+  - Tigana — Guy Gavriel Kay  ->  cover_i 477417  (title+author "Tigana")
+  - Black Sun (Between Earth and Sky #1) — Rebecca Roanhorse  ->  cover_i 10183208  (title+author "Black Sun")
+  - The Blacktongue Thief (Blacktongue #1) — Christopher Buehlman  ->  cover_i 10622593  (title+author "The Blacktongue Thief")
+  - To Shape a Dragon's Breath (Nampeshiweisit #1) — Moniquill Blackgoose  ->  cover_i 13200842  (title+author "To Shape a Dragon's Breath")
+  - Children of Earth and Sky — Guy Gavriel Kay  ->  cover_i 13085667  (title+author "Children of Earth and Sky")
+  - A Darker Shade of Magic (Shades of Magic #1) — V.E. Schwab  ->  cover_i 7410930  (title+author "A Darker Shade of Magic")
+  - Dragon Pearl (Thousand Worlds #1) — Yoon Ha Lee  ->  cover_i 8795002  (title+author "Dragon Pearl")
+  - The Ashfire King (The Sandsea Trilogy #2) — Chelsea Abdullah  ->  cover_i 14853410  (title+author "The Ashfire King")
+  - Dragonflight (Dragonriders of Pern #1) — Anne McCaffrey  ->  cover_i 10306696  (title+author "Dragonflight")
+  - The Armored Saint (The Sacred Throne #1) — Myke Cole  ->  cover_i 10106223  (title+author "The Armored Saint")
+  - The Subtle Art of Not Giving a F*ck — Mark Manson  ->  cover_i 8231990  (title+author "The Subtle Art of Not Giving a F*ck")

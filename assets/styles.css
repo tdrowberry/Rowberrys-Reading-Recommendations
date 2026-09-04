@@ -175,7 +175,10 @@ body[data-category="adult"]        { --page-bg: url("img/adult.jpeg"); }
 body[data-page="about"]         { --page-bg: url("img/about.jpeg"); }
 
 body[data-page="home"],
-body[data-category],
+body[data-category="professional"],
+body[data-category="junior"],
+body[data-category="highschool"],
+body[data-category="adult"],
 body[data-page="about"] {
   background-image:
     linear-gradient(rgba(243, 234, 214, .75), rgba(243, 234, 214, .75)),
@@ -273,6 +276,21 @@ body[data-page="about"] {
   text-align: center; color: var(--ink-soft); font-style: italic;
   margin-bottom: 2rem;
 }
+.dnr-link {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-soft);
+  font-size: .92rem;
+}
+.dnr-link a {
+  font-family: var(--font-head);
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+}
+.dnr-link a:hover { color: var(--burgundy); border-color: var(--burgundy); }
 .tile-grid {
   display: grid;
   gap: clamp(1rem, 3vw, 1.75rem);
@@ -490,6 +508,7 @@ body[data-page="about"] {
 .badge--junior       { --badge-bg: #7a4f2b; }
 .badge--highschool   { --badge-bg: var(--burgundy); }
 .badge--adult        { --badge-bg: var(--green-deep); }
+.badge--donotrecommend { --badge-bg: #4a4038; }
 
 .card__body {
   padding: .75rem 1rem 0;

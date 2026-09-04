@@ -18,13 +18,7 @@
      --------------------------------------------------------------------------- */
 
   // Hide a book from the site completely. Format: "Exact Title::Exact Author".
-  // "The Warded Man" is hidden: Tyler rates it 1 star, which for him means
-  // "don't recommend" regardless of Goodreads shelf tags — and its own review
-  // separately flagged disturbing sexual-violence content (see README →
-  // "Editorial notes").
-  var HIDE_BOOKS = [
-    "The Warded Man (Demon Cycle #1)::Peter V. Brett",
-  ];
+  var HIDE_BOOKS = [];
 
   // Keep a book's card, but don't print its review text.
   var HIDE_REVIEW = [];
@@ -35,7 +29,8 @@
     professional: "Professional",
     junior: "Junior",
     highschool: "High School",
-    adult: "Adult"
+    adult: "Adult",
+    donotrecommend: "Do Not Recommend"
   };
   var ROMAN = ["I", "II", "III", "IV"];
   var HOME_ORDER = ["professional", "junior", "highschool", "adult"];

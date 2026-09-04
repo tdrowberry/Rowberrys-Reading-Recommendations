@@ -135,13 +135,15 @@ Each entry is `"Exact Title::Exact Author"`. Save and reload — no rebuild need
 These came out of the `notes` in `books-data.json`. None of them break the site;
 they're judgment calls that are yours to make.
 
-1. ***The Warded Man* (Peter V. Brett), Adult shelf — removed.**
-   You rated it 1 star, which for you means "don't recommend" regardless of
-   Goodreads shelf tags, and your own review separately flagged disturbing
-   sexual‑violence content. It's excluded via `HIDE_BOOKS` in `assets/app.js`
-   rather than deleted from `books-data.json`, so your Goodreads export stays
-   intact and it won't reappear if you re‑export later. To bring it back,
-   delete its line from `HIDE_BOOKS`.
+1. **One- and two-star books, plus anything tagged "do-not-recommend" on
+   Goodreads, live on their own `donotrecommend.html` page instead of a regular
+   shelf.** It isn't listed among the four shelf tiles on the home page —
+   there's a single understated link under them ("See the Do Not Recommends
+   here") instead. This includes ***The Warded Man*** (1 star), the four other
+   2-star books that used to sit quietly on the Adult/High School shelves, and
+   the 8 titles you originally tagged do-not-recommend on Goodreads (those 8
+   have no rating/review data, since that's all Goodreads gave for a
+   do-not-recommend-tagged book).
 
 2. **The Holy Bible: King James Version — not on the site.**
    It's on your Goodreads "have‑to‑read" shelf but was never filed under any of
@@ -159,9 +161,11 @@ they're judgment calls that are yours to make.
    and ends the quote with an ellipsis. If you want the full text, paste it into
    that book's `review` in `books-data.json` and run `node tools/build-data.mjs`.
 
-5. **Books you tagged "do‑not‑recommend"** were already removed from
-   `books-data.json` before it got here (8 titles). They are not on the site and
-   won't come back unless you add them by hand.
+5. **Adding a new shelf like `donotrecommend`:** give its books a new `id` in
+   `books-data.json`, add a matching entry to `SHORT_LABEL` in `assets/app.js`
+   (used for card badges), add a `.badge--<id>` color in `assets/styles.css`,
+   and copy one of the shelf `.html` files as a starting point. Leave it out of
+   `HOME_ORDER` in `assets/app.js` if you don't want it as a home-page tile.
 
 ---
 
@@ -174,6 +178,9 @@ recommended-books-site/
 ├── junior.html              │  One page per shelf. Each is a small shell;
 ├── highschool.html          │  the book grid is filled in by assets/app.js.
 ├── adult.html               ┘
+├── donotrecommend.html     One- and two-star books + Goodreads do-not-recommends —
+│                           same shelf template, just not a home-page tile
+├── about.html               About Tyler + LinkedIn link
 ├── books-data.json          Source of truth: every book, rating, review, flag
 ├── covers.json              Open Library cover IDs (generated)
 ├── covers.report.txt        Which books have no cover (generated)
