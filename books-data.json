@@ -1,216 +1,2487 @@
 {
   "site_title": "Rowberrys Reading Reviews",
-  "source": "Exported from Goodreads shelf https://www.goodreads.com/review/list/181752708 on 2026-09-04, refreshed later the same day to include newly added books",
+  "source": "Rebuilt from goodreads_library_current.xlsx (336-book Goodreads export) on 2026-09-05. Columns Professional Rec / Adult Level / High School Level / Junior Rec / Do Not Recommend / Have-to-Read map to the site's shelves. Did-Not-Finish books and any 1–2★ book are placed in Do Not Recommend. The Recommend column's books were slotted onto shelves per Tyler's instructions (Sanderson / Feist / Lawhead / Temeraire / LOTR / King Raven / Grimnir → High School; Green Rider / Hungry Caterpillar / Where the Red Fern Grows → Junior; Four Seasons of Marriage / How Much Land Does a Man Need / KJV Bible → Adult).",
   "notes": [
-    "Each of the four main shelves is a direct pull of Tyler's Goodreads custom shelf of the same name. Books Tyler tagged 'do-not-recommend' on Goodreads, plus any book rated 1 or 2 stars regardless of which shelf it was on, are grouped into a separate 'donotrecommend' category instead of being left off the site entirely — quietly excluding them felt dishonest, so the full picture (including the reviews explaining why) stays on the site, just off the main four shelves. See the 'donotrecommend' category below.",
-    "'have_to_read' = true means Tyler also tagged the book on his Goodreads 'have-to-read' shelf. Treat these as the must-read standouts within a category (e.g. a gold border or badge).",
-    "'rating' is Tyler's own star rating (1-5) on Goodreads, not the public average. null means he read it but never rated it.",
-    "'review' is Tyler's own Goodreads review text where he wrote one; Goodreads truncates long reviews with '...more' in list view, so a few of these are partial. null means no review text.",
-    "The Holy Bible: King James Version is on Tyler's 'have-to-read' shelf but was never assigned to any of the four site categories on Goodreads, so it isn't included below. Flag this for Tyler in case he wants to add it to a category.",
-    "Resynced against Tyler's live Goodreads library (full export, 293 books) on 2026-09-04: filled in real ratings/reviews for the 8 originally-excluded do-not-recommend titles (previously null/null since the first export didn't include them), found 18 more do-not-recommend-eligible books that were never on the site at all (either Goodreads-tagged do-not-recommend, or rated 1-2 stars with no category tag), and moved the whole Starship's Mage series from adult-read to highschool-level since that's what Tyler's Goodreads shelf tags actually say (they'd been miscategorized). Also corrected Empire of Silence's rating from 4 to 3.",
-    "'Demon Copperhead' is tagged did-not-finish + adult-read on Goodreads, not actually 'read'. Excluded from the adult-read list below since it's not a completed recommendation.",
-    "Author names have been converted from Goodreads' 'Last, First' format to 'First Last' for display.",
-    "This file was refreshed later the same day to pick up new Goodreads additions. A Darkness at Sethanon, Blood of Tyrants, Crucible of Gold, and Empire of Ivory were added to Tyler's read shelf and rated (4, 3, 3, and 3 stars) but were not shelved into any of the four category shelves, so they are intentionally left out of every category below. Ask Tyler before adding them if that was an oversight.",
-    "The Book of Mormon is unusual: Tyler shelved it into junior-read, highschool-level, AND adult-read at once (plus have-to-read), so it appears in all three of those category lists below."
+    "'have_to_read' = Goodreads 'Have-to-Read (Gold Border)' flag — the must-read standouts within a shelf.",
+    "'rating' is Tyler's own 1–5 star rating; null means read but unrated.",
+    "'review' is Tyler's Goodreads review text, carried over from the previous build where it existed (the xlsx export has no review column).",
+    "'series' / 'seriesIndex' drive the stacked-series cards in card view. Books with the same 'series' on one shelf render as one clickable stack; list view shows them ungrouped with the series named in the details line.",
+    "'To Read' books and books with no shelf flag are not shown."
   ],
   "categories": [
     {
       "id": "professional",
       "label": "Professional Recommendations",
-      "count": 18,
+      "count": 20,
       "books": [
-        { "title": "The Business Ethics Field Guide", "author": "Brad Agle", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Think Again: The Power of Knowing What You Don't Know", "author": "Adam Grant", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "Atomic Habits", "author": "James Clear", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "The 7 Habits of Highly Effective People", "author": "Stephen R. Covey", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "How to Know a Person", "author": "David Brooks", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "The Innovator's Dilemma", "author": "Clayton M. Christensen", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "Hidden Potential", "author": "Adam Grant", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "Speaker for the Dead", "author": "Orson Scott Card", "rating": 5, "have_to_read": true, "review": "My new favorite book. Amazing" },
-        { "title": "The Chronicles of Narnia", "author": "C.S. Lewis", "rating": 5, "have_to_read": true, "review": null },
-        { "title": "Elantris", "author": "Brandon Sanderson", "rating": 5, "have_to_read": true, "review": "New favorite book" },
-        { "title": "The Alchemist", "author": "Paulo Coelho", "rating": 5, "have_to_read": false, "review": "Just a good story that you don't get now a days" },
-        { "title": "Unbroken", "author": "Laura Hillenbrand", "rating": 5, "have_to_read": true, "review": null },
-        { "title": "Die with Zero", "author": "Bill Perkins", "rating": 5, "have_to_read": false, "review": "Definitely agree about giving money to kids earlier than later. And the value of a few extra weeks in the hospital at the end of life, I would rather... (truncated by Goodreads)" },
-        { "title": "Frankenstein: The 1818 Text", "author": "Mary Shelley", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "How to Talk So Little Kids Will Listen", "author": "Joanna Faber", "rating": 5, "have_to_read": true, "review": null },
-        { "title": "The 12 Week Year", "author": "Brian P. Moran", "rating": 3, "have_to_read": false, "review": null },
-        { "title": "Magician: Apprentice", "author": "Raymond E. Feist", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "Hood", "author": "Stephen R. Lawhead", "rating": 4, "have_to_read": false, "review": null }
+        {
+          "title": "Atomic Habits",
+          "author": "James Clear",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Die with Zero",
+          "author": "Bill Perkins",
+          "rating": 5,
+          "have_to_read": false,
+          "review": "Definitely agree about giving money to kids earlier than later. And the value of a few extra weeks in the hospital at the end of life, I would rather... (truncated by Goodreads)"
+        },
+        {
+          "title": "Frankenstein",
+          "author": "Mary Wollstonecraft Shelley",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Freakonomics",
+          "author": "Steven D. Levitt",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Hidden Potential",
+          "author": "Adam M. Grant",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "How to Know a Person",
+          "author": "David Brooks",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "How to Talk So Little Kids Will Listen",
+          "author": "Joanna Faber",
+          "rating": 5,
+          "have_to_read": true,
+          "review": null
+        },
+        {
+          "title": "How Will You Measure Your Life?",
+          "author": "Clayton M. Christensen",
+          "rating": 5,
+          "have_to_read": true,
+          "review": null
+        },
+        {
+          "title": "Man's Search for Meaning",
+          "author": "Viktor E. Frankl",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Speaker for the Dead",
+          "author": "Orson Scott Card",
+          "rating": 5,
+          "have_to_read": true,
+          "review": "My new favorite book. Amazing",
+          "series": "Ender's Saga",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The 12 Week Year",
+          "author": "Brian P. Moran",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The 7 Habits of Highly Effective People",
+          "author": "Stephen R. Covey",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Alchemist",
+          "author": "Paulo Coelho",
+          "rating": 5,
+          "have_to_read": false,
+          "review": "Just a good story that you don't get now a days"
+        },
+        {
+          "title": "The Business Ethics Field Guide",
+          "author": "Brad Agle",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Chronicles of Narnia",
+          "author": "C.S. Lewis",
+          "rating": 5,
+          "have_to_read": true,
+          "review": null
+        },
+        {
+          "title": "The Innovator's Dilemma",
+          "author": "Clayton M. Christensen",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Innovator's Solution",
+          "author": "Clayton M. Christensen",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Self-Driven Child",
+          "author": "William Stixrud",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Think Again",
+          "author": "Adam M. Grant",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Unbroken",
+          "author": "Laura Hillenbrand",
+          "rating": 5,
+          "have_to_read": true,
+          "review": null
+        }
       ]
     },
     {
       "id": "junior",
       "label": "Junior Recommendations",
-      "count": 47,
+      "count": 70,
       "books": [
-        { "title": "Harry Potter and the Philosopher's Stone", "author": "J.K. Rowling", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Alcatraz Versus the Shattered Lens", "author": "Brandon Sanderson", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Alcatraz Versus the Evil Librarians", "author": "Brandon Sanderson", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Mossflower (Redwall #2)", "author": "Brian Jacques", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "The Book of Mormon: Another Testament of Jesus Christ", "author": "Joseph Smith Jr.", "rating": 5, "have_to_read": true, "review": null },
-        { "title": "In the Hall of the Dragon King", "author": "Stephen R. Lawhead", "rating": 4, "have_to_read": false, "review": "Classic children story but with a religious twist that I found pleasant. Many writers avoid religion but Stephen didn't" },
-        { "title": "The Hobbit", "author": "J.R.R. Tolkien", "rating": 5, "have_to_read": true, "review": null },
-        { "title": "The Maze Runner", "author": "James Dashner", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "As a Man Thinketh", "author": "James Allen", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Secret Projects 2-Book Set (Tress of the Emerald Sea & The Frugal Wizard's Handbook for Surviving Medieval England)", "author": "Brandon Sanderson", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "The Outcasts (Brotherband Chronicles #1)", "author": "John Flanagan", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "The Invaders (Brotherband Chronicles #2)", "author": "John Flanagan", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "Duel at Araluen (Ranger's Apprentice: The Royal Ranger #3)", "author": "John Flanagan", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "The Book of Three", "author": "Lloyd Alexander", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "The Chronicles of Narnia", "author": "C.S. Lewis", "rating": 5, "have_to_read": true, "review": null },
-        { "title": "The Black Cauldron", "author": "Lloyd Alexander", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Wild Born (Spirit Animals #1)", "author": "Brandon Mull", "rating": 3, "have_to_read": false, "review": null },
-        { "title": "The Magic Thief", "author": "Sarah Prineas", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "Child of the Dark Prophecy", "author": "T.A. Barron", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "Into the Wild (Warriors #1)", "author": "Erin Hunter", "rating": 5, "have_to_read": false, "review": "Great kids book." },
-        { "title": "The Lost Years of Merlin", "author": "T.A. Barron", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Last Gate of the Emperor", "author": "Kwame Mbalia", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "On the Edge of the Dark Sea of Darkness (Wingfeather Saga #1)", "author": "Andrew Peterson", "rating": 4, "have_to_read": false, "review": "Good kids book. Would recommend for my kids. Very predictable as a fantasy adult reader." },
-        { "title": "Redwall", "author": "Brian Jacques", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "The Little Prince", "author": "Antoine de Saint-Exupéry", "rating": null, "have_to_read": false, "review": null },
-        { "title": "The Ruins of Gorlan (Ranger's Apprentice #1)", "author": "John Flanagan", "rating": 5, "have_to_read": true, "review": null },
-        { "title": "The Burning Bridge (Ranger's Apprentice #2)", "author": "John Flanagan", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "The Warden and the Wolf King (Wingfeather Saga #4)", "author": "Andrew Peterson", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "Changeling (The Oddmire #1)", "author": "William Ritter", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "The Unready Queen (The Oddmire #2)", "author": "William Ritter", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Race to the Sun", "author": "Rebecca Roanhorse", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "The Barren Grounds (The Misewa Saga #1)", "author": "David A. Robertson", "rating": 3, "have_to_read": false, "review": null },
-        { "title": "Wild Magic (Immortals #1)", "author": "Tamora Pierce", "rating": 4, "have_to_read": false, "review": "great book" },
-        { "title": "Deepest, Darkest (The Oddmire #3)", "author": "William Ritter", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Alcatraz Versus the Knights of Crystallia", "author": "Brandon Sanderson", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Alcatraz Versus the Scrivener's Bones", "author": "Brandon Sanderson", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "The Dark Talent", "author": "Brandon Sanderson", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Bastille vs. the Evil Librarians", "author": "Brandon Sanderson", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Ascendant (Songs of Chaos #1)", "author": "Michael R. Miller", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "The Green Ember", "author": "S.D. Smith", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Princess Academy", "author": "Shannon Hale", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Palace of Stone", "author": "Shannon Hale", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "The Forgotten Sisters (Princess Academy #3)", "author": "Shannon Hale", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "The Princess and the Goblin", "author": "George MacDonald", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Ember Falls (The Green Ember #2)", "author": "S.D. Smith", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Sunreach", "author": "Brandon Sanderson", "rating": 3, "have_to_read": false, "review": "Eh, only book from Brandon Sanderson that has been meh for me so far" },
-        { "title": "Pawn of Prophecy (The Belgariad #1)", "author": "David Eddings", "rating": 4, "have_to_read": false, "review": "Good ol' fashioned style fantasy." }
+        {
+          "title": "Alcatraz Versus the Evil Librarians",
+          "author": "Brandon Sanderson",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Alcatraz vs. the Evil Librarians",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Alcatraz Versus the Knights of Crystallia",
+          "author": "Brandon Sanderson",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Alcatraz vs. the Evil Librarians",
+          "seriesIndex": 3
+        },
+        {
+          "title": "Alcatraz Versus the Scrivener's Bones",
+          "author": "Brandon Sanderson",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Alcatraz vs. the Evil Librarians",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Alcatraz Versus the Shattered Lens",
+          "author": "Brandon Sanderson",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Alcatraz vs. the Evil Librarians",
+          "seriesIndex": 4
+        },
+        {
+          "title": "As a Man Thinketh",
+          "author": "James Allen",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Ascendant",
+          "author": "Michael R. Miller",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Songs of Chaos",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Bastille vs. the Evil Librarians",
+          "author": "Brandon Sanderson",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Alcatraz vs. the Evil Librarians",
+          "seriesIndex": 6
+        },
+        {
+          "title": "Beyond the Deepwoods",
+          "author": "Paul Stewart",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Edge Chronicles: The Twig Saga",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Brisingr",
+          "author": "Christopher Paolini",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Inheritance Cycle",
+          "seriesIndex": 3
+        },
+        {
+          "title": "Changeling",
+          "author": "William Ritter",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Oddmire",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Charlotte's Web",
+          "author": "E.B. White",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Child of the Dark Prophecy",
+          "author": "T.A. Barron",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Deepest, Darkest",
+          "author": "William Ritter",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Oddmire",
+          "seriesIndex": 3
+        },
+        {
+          "title": "Duel at Araluen",
+          "author": "John Flanagan",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Ranger's Apprentice: The Royal Ranger",
+          "seriesIndex": 3
+        },
+        {
+          "title": "Eldest",
+          "author": "Christopher Paolini",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Inheritance Cycle",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Ember Falls",
+          "author": "S.D. Smith",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Green Ember",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Eragon",
+          "author": "Christopher Paolini",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Inheritance Cycle",
+          "seriesIndex": 1
+        },
+        {
+          "title": "First Rider's Call",
+          "author": "Kristen Britain",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Green Rider",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Found",
+          "author": "Sarah Prineas",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Magic Thief",
+          "seriesIndex": 3
+        },
+        {
+          "title": "Green Rider",
+          "author": "Kristen Britain",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Green Rider",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Harry Potter and the Order of the Phoenix",
+          "author": "J.K. Rowling",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Harry Potter",
+          "seriesIndex": 5
+        },
+        {
+          "title": "Harry Potter and the Philosopher's Stone",
+          "author": "J.K. Rowling",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Harry Potter",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Into the Wild",
+          "author": "Erin Hunter",
+          "rating": 5,
+          "have_to_read": false,
+          "review": "Great kids book.",
+          "series": "Warriors",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Last Gate of the Emperor",
+          "author": "Kwame Mbalia",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Lost",
+          "author": "Sarah Prineas",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Magic Thief",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Magyk",
+          "author": "Angie Sage",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Septimus Heap",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Mossflower",
+          "author": "Brian Jacques",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Redwall",
+          "seriesIndex": 2
+        },
+        {
+          "title": "North! or Be Eaten",
+          "author": "Andrew Peterson",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Wingfeather Saga",
+          "seriesIndex": 2
+        },
+        {
+          "title": "On the Edge of the Dark Sea of Darkness",
+          "author": "Andrew Peterson",
+          "rating": 4,
+          "have_to_read": false,
+          "review": "Good kids book. Would recommend for my kids. Very predictable as a fantasy adult reader.",
+          "series": "The Wingfeather Saga",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Palace of Stone",
+          "author": "Shannon Hale",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Princess Academy",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Pawn of Prophecy",
+          "author": "David Eddings",
+          "rating": 4,
+          "have_to_read": false,
+          "review": "Good ol' fashioned style fantasy.",
+          "series": "The Belgariad",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Princess Academy",
+          "author": "Shannon Hale",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Princess Academy",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Race to the Sun",
+          "author": "Rebecca Roanhorse",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Redwall",
+          "author": "Brian Jacques",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Redwall",
+          "seriesIndex": 1
+        },
+        {
+          "title": "River",
+          "author": "Erin Hunter",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Warriors: A Starless Clan",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Scorpion Mountain",
+          "author": "John Flanagan",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Brotherband Chronicles",
+          "seriesIndex": 5
+        },
+        {
+          "title": "Slaves of Socorro",
+          "author": "John Flanagan",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Brotherband Chronicles",
+          "seriesIndex": 4
+        },
+        {
+          "title": "The Barren Grounds",
+          "author": "David Alexander Robertson",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Misewa Saga",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Black Cauldron",
+          "author": "Lloyd Alexander",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Chronicles of Prydain",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Book of Mormon",
+          "author": "Joseph Smith Jr.",
+          "rating": 5,
+          "have_to_read": true,
+          "review": null
+        },
+        {
+          "title": "The Book of Three",
+          "author": "Lloyd Alexander",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Chronicles of Prydain",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Burning Bridge",
+          "author": "John Flanagan",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Ranger's Apprentice",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Chronicles of Narnia",
+          "author": "C.S. Lewis",
+          "rating": 5,
+          "have_to_read": true,
+          "review": null
+        },
+        {
+          "title": "The Dark Talent",
+          "author": "Brandon Sanderson",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Alcatraz vs. the Evil Librarians",
+          "seriesIndex": 5
+        },
+        {
+          "title": "The Darke Toad",
+          "author": "Angie Sage",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Septimus Heap",
+          "seriesIndex": 1.5
+        },
+        {
+          "title": "The Forgotten Sisters",
+          "author": "Shannon Hale",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Princess Academy",
+          "seriesIndex": 3
+        },
+        {
+          "title": "The Ghostfaces",
+          "author": "John Flanagan",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Brotherband Chronicles",
+          "seriesIndex": 6
+        },
+        {
+          "title": "The Giving Tree",
+          "author": "Shel Silverstein",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Green Ember",
+          "author": "S.D. Smith",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Green Ember",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Hunters",
+          "author": "John Flanagan",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Brotherband Chronicles",
+          "seriesIndex": 3
+        },
+        {
+          "title": "The Icebound Land",
+          "author": "John Flanagan",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Ranger's Apprentice",
+          "seriesIndex": 3
+        },
+        {
+          "title": "The Invaders",
+          "author": "John Flanagan",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Brotherband Chronicles",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Last Olympian",
+          "author": "Rick Riordan",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Percy Jackson and the Olympians",
+          "seriesIndex": 5
+        },
+        {
+          "title": "The Lightning Thief",
+          "author": "Rick Riordan",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Percy Jackson and the Olympians",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Little Prince",
+          "author": "Antoine de Saint-Exupéry",
+          "rating": null,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Lost Years of Merlin",
+          "author": "T.A. Barron",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Merlin",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Magic Thief",
+          "author": "Sarah Prineas",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Magic Thief",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Monster in the Hollows",
+          "author": "Andrew Peterson",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Wingfeather Saga",
+          "seriesIndex": 3
+        },
+        {
+          "title": "The Nethergrim",
+          "author": "Matthew Jobin",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Outcasts",
+          "author": "John Flanagan",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Brotherband Chronicles",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Princess and the Goblin",
+          "author": "George MacDonald",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Princess Irene and Curdie",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Red Fox Clan",
+          "author": "John Flanagan",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Ranger's Apprentice: The Royal Ranger",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Royal Ranger",
+          "author": "John Flanagan",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Ranger's Apprentice: The Royal Ranger",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Ruins of Gorlan",
+          "author": "John Flanagan",
+          "rating": 5,
+          "have_to_read": true,
+          "review": null,
+          "series": "Ranger's Apprentice",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Unready Queen",
+          "author": "William Ritter",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Oddmire",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Very Hungry Caterpillar",
+          "author": "Eric Carle",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Warden and the Wolf King",
+          "author": "Andrew Peterson",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Wingfeather Saga",
+          "seriesIndex": 4
+        },
+        {
+          "title": "Where the Red Fern Grows",
+          "author": "Wilson Rawls",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Wild Born",
+          "author": "Brandon Mull",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null,
+          "series": "Spirit Animals",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Wild Magic",
+          "author": "Tamora Pierce",
+          "rating": 4,
+          "have_to_read": false,
+          "review": "great book",
+          "series": "Immortals",
+          "seriesIndex": 1
+        }
       ]
     },
     {
       "id": "highschool",
       "label": "High School Level",
-      "count": 44,
+      "count": 130,
       "books": [
-        { "title": "Starship's Mage", "author": "Glynn Stewart", "rating": 5, "have_to_read": false, "review": "Enjoyable story" },
-        { "title": "Hand of Mars (Starship's Mage #2)", "author": "Glynn Stewart", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Voice of Mars (Starship's Mage #3)", "author": "Glynn Stewart", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Alien Arcana (Starship's Mage #4)", "author": "Glynn Stewart", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "Death's End (Remembrance of Earth's Past #3)", "author": "Cixin Liu", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "A Crown of Swords (The Wheel of Time #7)", "author": "Robert Jordan", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Tailored Realities", "author": "Brandon Sanderson", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "The Book of Mormon: Another Testament of Jesus Christ", "author": "Joseph Smith Jr.", "rating": 5, "have_to_read": true, "review": null },
-        { "title": "Think Again: The Power of Knowing What You Don't Know", "author": "Adam Grant", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "Atomic Habits", "author": "James Clear", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "The Lord of the Rings: The Two Towers (illustrated edition)", "author": "J.R.R. Tolkien, adapted by Brian Sibley", "rating": 5, "have_to_read": true, "review": null },
-        { "title": "The Eye of the World (The Wheel of Time #1)", "author": "Robert Jordan", "rating": 4, "have_to_read": false, "review": "Book is great. Show is terrible. Don't watch the show unless you want this book sexualized and half as good" },
-        { "title": "The Hero of Ages (Mistborn #3)", "author": "Brandon Sanderson", "rating": 5, "have_to_read": false, "review": "I like how this book brings a conclusion and you can choose to keep reading the next or end here." },
-        { "title": "The Warlords of Nin (The Dragon King #2)", "author": "Stephen R. Lawhead", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "Forward the Foundation", "author": "Isaac Asimov", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "Akata Witch", "author": "Nnedi Okorafor", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Age of Myth (The Legends of the First Empire #1)", "author": "Michael J. Sullivan", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Assassin's Apprentice / Royal Assassin (Farseer Trilogy #1-2)", "author": "Robin Hobb", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "Elantris", "author": "Brandon Sanderson", "rating": 5, "have_to_read": true, "review": "New favorite book" },
-        { "title": "The Lost Gate (Mither Mages #1)", "author": "Orson Scott Card", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "The Stardust Thief", "author": "Chelsea Abdullah", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "The Alchemist", "author": "Paulo Coelho", "rating": 5, "have_to_read": false, "review": "Just a good story that you don't get now a days" },
-        { "title": "Binti", "author": "Nnedi Okorafor", "rating": 4, "have_to_read": false, "review": "Good African sci-fi is my favorite" },
-        { "title": "The Night Masquerade (Binti #3)", "author": "Nnedi Okorafor", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Tress of the Emerald Sea", "author": "Brandon Sanderson", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "The Well of Ascension (Mistborn #2)", "author": "Brandon Sanderson", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "Words of Radiance (The Stormlight Archive #2)", "author": "Brandon Sanderson", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "Awakening (Infinity Blade #1)", "author": "Brandon Sanderson", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "The Sunlit Man", "author": "Brandon Sanderson", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "The Sword and the Flame (The Dragon King #3)", "author": "Stephen R. Lawhead", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "The Book Thief", "author": "Markus Zusak", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "The Skin Map (Bright Empires #1)", "author": "Stephen R. Lawhead", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "The Fatal Tree (Bright Empires #5)", "author": "Stephen R. Lawhead", "rating": 3, "have_to_read": false, "review": null },
-        { "title": "To Kill a Mockingbird", "author": "Harper Lee", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "Extreme Ownership", "author": "Jocko Willink", "rating": 4, "have_to_read": false, "review": "Great motivational book. Also helps bring understanding to details of war in the Middle East, I think many don't understand what terrorist groups were doing" },
-        { "title": "The Return of the King", "author": "J.R.R. Tolkien", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "A Wizard of Earthsea", "author": "Ursula K. Le Guin", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "The Tombs of Atuan", "author": "Ursula K. Le Guin", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "The Lost Dreamer", "author": "Lizz Huerta", "rating": 4, "have_to_read": false, "review": "Can't wait for the next one" },
-        { "title": "Dragon Champion (Age of Fire #1)", "author": "E.E. Knight", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Depths of Vanalf (Grimnir Chronicles #1)", "author": "Brady Hunsaker", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Warbreaker", "author": "Brandon Sanderson", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Magician: Apprentice", "author": "Raymond E. Feist", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "The Shadow of What Was Lost (The Licanius Trilogy #1)", "author": "James Islington", "rating": 4, "have_to_read": false, "review": null }
+        {
+          "title": "1984",
+          "author": "George Orwell",
+          "rating": null,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "A Crown of Swords",
+          "author": "Robert Jordan",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Wheel of Time",
+          "seriesIndex": 7
+        },
+        {
+          "title": "A Darkness at Sethanon",
+          "author": "Raymond E. Feist",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Riftwar Saga",
+          "seriesIndex": 4
+        },
+        {
+          "title": "A Wizard of Earthsea",
+          "author": "Ursula K. Le Guin",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Earthsea Cycle",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Age of Myth",
+          "author": "Michael J. Sullivan",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Legends of the First Empire",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Age of Swords",
+          "author": "Michael J. Sullivan",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Legends of the First Empire",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Age of War",
+          "author": "Michael J. Sullivan",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Legends of the First Empire",
+          "seriesIndex": 3
+        },
+        {
+          "title": "Akata Warrior",
+          "author": "Nnedi Okorafor",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Nsibidi Scripts",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Akata Witch",
+          "author": "Nnedi Okorafor",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Nsibidi Scripts",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Akata Woman",
+          "author": "Nnedi Okorafor",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Nsibidi Scripts",
+          "seriesIndex": 3
+        },
+        {
+          "title": "Alien Arcana",
+          "author": "Glynn Stewart",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Starship's Mage",
+          "seriesIndex": 4
+        },
+        {
+          "title": "Animal Farm",
+          "author": "George Orwell",
+          "rating": null,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Annihilation",
+          "author": "Jeff Vandermeer",
+          "rating": 2,
+          "have_to_read": false,
+          "review": null,
+          "series": "Southern Reach",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Arcanum Unbounded",
+          "author": "Brandon Sanderson",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Assassin's Apprentice / Royal Assassin",
+          "author": "Robin Hobb",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Farseer Trilogy",
+          "seriesIndex": 1,
+          "omnibus": true
+        },
+        {
+          "title": "Assassin's Quest",
+          "author": "Robin Hobb",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null,
+          "series": "Farseer Trilogy",
+          "seriesIndex": 3
+        },
+        {
+          "title": "Atomic Habits",
+          "author": "James Clear",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Awakening",
+          "author": "Brandon Sanderson",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Infinity Blade",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Binti",
+          "author": "Nnedi Okorafor",
+          "rating": 4,
+          "have_to_read": false,
+          "review": "Good African sci-fi is my favorite",
+          "series": "Binti",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Black Powder War",
+          "author": "Naomi Novik",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null,
+          "series": "Temeraire",
+          "seriesIndex": 3
+        },
+        {
+          "title": "Blood of Tyrants",
+          "author": "Naomi Novik",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null,
+          "series": "Temeraire",
+          "seriesIndex": 8
+        },
+        {
+          "title": "Braiding Sweetgrass",
+          "author": "Robin Wall Kimmerer",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Brave New World",
+          "author": "Aldous Huxley",
+          "rating": null,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Catching Fire",
+          "author": "Suzanne Collins",
+          "rating": null,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Hunger Games",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Crucible of Gold",
+          "author": "Naomi Novik",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null,
+          "series": "Temeraire",
+          "seriesIndex": 7
+        },
+        {
+          "title": "Death's End",
+          "author": "Liu Cixin",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Remembrance of Earth's Past",
+          "seriesIndex": 3
+        },
+        {
+          "title": "Depths of Vanalf",
+          "author": "Brady Hunsaker",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Grimnir Chronicles",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Dragon Champion",
+          "author": "E.E. Knight",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Age of Fire",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Dragonslayer",
+          "author": "Duncan M. Hamilton",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Dragonslayer",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Elantris",
+          "author": "Brandon Sanderson",
+          "rating": 5,
+          "have_to_read": true,
+          "review": "New favorite book"
+        },
+        {
+          "title": "Empire of Ivory",
+          "author": "Naomi Novik",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null,
+          "series": "Temeraire",
+          "seriesIndex": 4
+        },
+        {
+          "title": "Ender's Game",
+          "author": "Orson Scott Card",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Ender's Saga",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Everyone Communicates, Few Connect",
+          "author": "John C. Maxwell",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Extreme Ownership",
+          "author": "Jocko Willink",
+          "rating": 4,
+          "have_to_read": false,
+          "review": "Great motivational book. Also helps bring understanding to details of war in the Middle East, I think many don't understand what terrorist groups were doing"
+        },
+        {
+          "title": "Forward the Foundation",
+          "author": "Isaac Asimov",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Foundation",
+          "seriesIndex": 7
+        },
+        {
+          "title": "Foundation",
+          "author": "Isaac Asimov",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Foundation",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Foundation and Empire",
+          "author": "Isaac Asimov",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Foundation",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Gatefather",
+          "author": "Orson Scott Card",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Mither Mages",
+          "seriesIndex": 3
+        },
+        {
+          "title": "Hand of Mars",
+          "author": "Glynn Stewart",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Starship's Mage",
+          "seriesIndex": 2
+        },
+        {
+          "title": "His Majesty's Dragon",
+          "author": "Naomi Novik",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Temeraire",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Home",
+          "author": "Nnedi Okorafor",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Binti",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Hood",
+          "author": "Stephen R. Lawhead",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "King Raven",
+          "seriesIndex": 1
+        },
+        {
+          "title": "In the Hall of the Dragon King",
+          "author": "Stephen R. Lawhead",
+          "rating": 4,
+          "have_to_read": false,
+          "review": "Classic children story but with a religious twist that I found pleasant. Many writers avoid religion but Stephen didn't",
+          "series": "The Dragon King",
+          "seriesIndex": 1
+        },
+        {
+          "title": "In the Land of the Everliving",
+          "author": "Stephen R. Lawhead",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Eirlandia",
+          "seriesIndex": 2
+        },
+        {
+          "title": "In the Region of the Summer Stars",
+          "author": "Stephen R. Lawhead",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Eirlandia",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Isles of the Emberdark",
+          "author": "Brandon Sanderson",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Judgment of Mars",
+          "author": "Glynn Stewart",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null,
+          "series": "Starship's Mage",
+          "seriesIndex": 5
+        },
+        {
+          "title": "Knight of the Silver Circle",
+          "author": "Duncan M. Hamilton",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Dragonslayer",
+          "seriesIndex": 2
+        },
+        {
+          "title": "League of Dragons",
+          "author": "Naomi Novik",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null,
+          "series": "Temeraire",
+          "seriesIndex": 9
+        },
+        {
+          "title": "The Many Lives of Stephen Leeds",
+          "author": "Brandon Sanderson",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Legion",
+          "seriesIndex": 1,
+          "omnibus": true
+        },
+        {
+          "title": "Lord of Chaos",
+          "author": "Robert Jordan",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Wheel of Time",
+          "seriesIndex": 6
+        },
+        {
+          "title": "Magician: Apprentice",
+          "author": "Raymond E. Feist",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Riftwar Saga",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Magician: Master",
+          "author": "Raymond E. Feist",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Riftwar Saga",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Death Cure — Graphic Novel Prelude",
+          "author": "Eric Carrasco",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Maze Runner",
+          "seriesIndex": null
+        },
+        {
+          "title": "The Scorch Trials — Graphic Novel Prelude",
+          "author": "Jackson Lanzing",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Maze Runner",
+          "seriesIndex": null
+        },
+        {
+          "title": "Mockingjay",
+          "author": "Suzanne Collins",
+          "rating": null,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Hunger Games",
+          "seriesIndex": 3
+        },
+        {
+          "title": "Prelude to Foundation",
+          "author": "Isaac Asimov",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null,
+          "series": "Foundation",
+          "seriesIndex": 6
+        },
+        {
+          "title": "Ready Player One",
+          "author": "Ernest Cline",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Red Prophet",
+          "author": "Orson Scott Card",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Tales of Alvin Maker",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Redemption",
+          "author": "Brandon Sanderson",
+          "rating": null,
+          "have_to_read": false,
+          "review": null,
+          "series": "Infinity Blade",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Rhythm of War",
+          "author": "Brandon Sanderson",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Stormlight Archive",
+          "seriesIndex": 4
+        },
+        {
+          "title": "Scarlet",
+          "author": "Stephen R. Lawhead",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "King Raven",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Second Foundation",
+          "author": "Isaac Asimov",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Foundation",
+          "seriesIndex": 3
+        },
+        {
+          "title": "Secret Projects 2-Book Set",
+          "author": "Brandon Sanderson",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Shadow Speaker",
+          "author": "Nnedi Okorafor",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Desert Magician's Duology",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Shadows of Kelig",
+          "author": "Brady Hunsaker",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Grimnir Chronicles",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Silverthorn",
+          "author": "Raymond E. Feist",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Riftwar Saga",
+          "seriesIndex": 3
+        },
+        {
+          "title": "Starship's Mage",
+          "author": "Glynn Stewart",
+          "rating": 5,
+          "have_to_read": false,
+          "review": "Enjoyable story",
+          "series": "Starship's Mage",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Stonefather",
+          "author": "Orson Scott Card",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Mither Mages",
+          "seriesIndex": 0.5
+        },
+        {
+          "title": "Sunreach",
+          "author": "Brandon Sanderson",
+          "rating": 3,
+          "have_to_read": false,
+          "review": "Eh, only book from Brandon Sanderson that has been meh for me so far",
+          "series": "Skyward",
+          "seriesIndex": 2.1
+        },
+        {
+          "title": "Tailored Realities",
+          "author": "Brandon Sanderson",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Alchemist",
+          "author": "Paulo Coelho",
+          "rating": 5,
+          "have_to_read": false,
+          "review": "Just a good story that you don't get now a days"
+        },
+        {
+          "title": "The Alchemyst",
+          "author": "Michael Scott",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Secrets of the Immortal Nicholas Flamel",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Bone House",
+          "author": "Stephen R. Lawhead",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Bright Empires",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Book of Mormon",
+          "author": "Joseph Smith Jr.",
+          "rating": 5,
+          "have_to_read": true,
+          "review": null
+        },
+        {
+          "title": "The Book Thief",
+          "author": "Markus Zusak",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Dragon Reborn",
+          "author": "Robert Jordan",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Wheel of Time",
+          "seriesIndex": 3
+        },
+        {
+          "title": "The Eye of Minds",
+          "author": "James Dashner",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Mortality Doctrine",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Eye of the World",
+          "author": "Robert Jordan",
+          "rating": 4,
+          "have_to_read": false,
+          "review": "Book is great. Show is terrible. Don't watch the show unless you want this book sexualized and half as good",
+          "series": "The Wheel of Time",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Fatal Tree",
+          "author": "Stephen R. Lawhead",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null,
+          "series": "Bright Empires",
+          "seriesIndex": 5
+        },
+        {
+          "title": "The Fellowship of the Ring",
+          "author": "J.R.R. Tolkien",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Lord of the Rings",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Fires of Heaven",
+          "author": "Robert Jordan",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Wheel of Time",
+          "seriesIndex": 5
+        },
+        {
+          "title": "The Fires of Merlin",
+          "author": "T.A. Barron",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Frugal Wizard's Handbook for Surviving Medieval England",
+          "author": "Brandon Sanderson",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Secret Projects",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Game of Lives",
+          "author": "James Dashner",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Mortality Doctrine",
+          "seriesIndex": 3
+        },
+        {
+          "title": "The Gate Thief",
+          "author": "Orson Scott Card",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Mither Mages",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Giver",
+          "author": "Lois Lowry",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Great Hunt",
+          "author": "Robert Jordan",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Wheel of Time",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Hitchhiker's Guide to the Galaxy",
+          "author": "Douglas Adams",
+          "rating": 2,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Hobbit",
+          "author": "J.R.R. Tolkien",
+          "rating": 5,
+          "have_to_read": true,
+          "review": null
+        },
+        {
+          "title": "The Hunger Games",
+          "author": "Suzanne Collins",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Hunger Games",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Two Towers",
+          "author": "J.R.R. Tolkien",
+          "rating": 5,
+          "have_to_read": true,
+          "review": null,
+          "series": "The Lord of the Rings",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Lost Dreamer",
+          "author": "Lizz Huerta",
+          "rating": 4,
+          "have_to_read": false,
+          "review": "Can't wait for the next one",
+          "series": "The Lost Dreamer Duology",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Lost Gate",
+          "author": "Orson Scott Card",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Mither Mages",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Lost Hero",
+          "author": "Rick Riordan",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Heroes of Olympus",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Maze Runner",
+          "author": "James Dashner",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Maze Runner",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Memory Police",
+          "author": "Yōko Ogawa",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Mirror of Fate",
+          "author": "T.A. Barron",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null,
+          "series": "Merlin",
+          "seriesIndex": 4
+        },
+        {
+          "title": "The Night Masquerade",
+          "author": "Nnedi Okorafor",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Binti",
+          "seriesIndex": 3
+        },
+        {
+          "title": "The Return of the King",
+          "author": "J.R.R. Tolkien",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Lord of the Rings",
+          "seriesIndex": 3
+        },
+        {
+          "title": "The Rithmatist",
+          "author": "Brandon Sanderson",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Rule of Thoughts",
+          "author": "James Dashner",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Mortality Doctrine",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Seven Songs of Merlin",
+          "author": "T.A. Barron",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Shadow Lamp",
+          "author": "Stephen R. Lawhead",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Bright Empires",
+          "seriesIndex": 4
+        },
+        {
+          "title": "The Shadow of What Was Lost",
+          "author": "James Islington",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Licanius Trilogy",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Shadow Rising",
+          "author": "Robert Jordan",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Wheel of Time",
+          "seriesIndex": 4
+        },
+        {
+          "title": "The Skin Map",
+          "author": "Stephen R. Lawhead",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Bright Empires",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Spirit Well",
+          "author": "Stephen R. Lawhead",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Bright Empires",
+          "seriesIndex": 3
+        },
+        {
+          "title": "The Stardust Grail",
+          "author": "Yume Kitasei",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Stardust Thief",
+          "author": "Chelsea Abdullah",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Sandsea Trilogy",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Sunlit Man",
+          "author": "Brandon Sanderson",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Sword and the Flame",
+          "author": "Stephen R. Lawhead",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Dragon King",
+          "seriesIndex": 3
+        },
+        {
+          "title": "The Tombs of Atuan",
+          "author": "Ursula K. Le Guin",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Earthsea Cycle",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Warlords of Nin",
+          "author": "Stephen R. Lawhead",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Dragon King",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Way of Kings",
+          "author": "Brandon Sanderson",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Stormlight Archive",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Wings of Merlin",
+          "author": "T.A. Barron",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Think Again",
+          "author": "Adam M. Grant",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Throne of Jade",
+          "author": "Naomi Novik",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Temeraire",
+          "seriesIndex": 2
+        },
+        {
+          "title": "To Kill a Mockingbird",
+          "author": "Harper Lee",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Tongues of Serpents",
+          "author": "Naomi Novik",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Temeraire",
+          "seriesIndex": 6
+        },
+        {
+          "title": "Tress of the Emerald Sea",
+          "author": "Brandon Sanderson",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Hoid's Travails",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Tuck",
+          "author": "Stephen R. Lawhead",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "King Raven",
+          "seriesIndex": 3
+        },
+        {
+          "title": "Victory of Eagles",
+          "author": "Naomi Novik",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Temeraire",
+          "seriesIndex": 5
+        },
+        {
+          "title": "Voice of Mars",
+          "author": "Glynn Stewart",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Starship's Mage",
+          "seriesIndex": 3
+        },
+        {
+          "title": "Wakers",
+          "author": "Orson Scott Card",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Side Step Trilogy",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Warbreaker",
+          "author": "Brandon Sanderson",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Wind and Truth",
+          "author": "Brandon Sanderson",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Stormlight Archive",
+          "seriesIndex": 5
+        },
+        {
+          "title": "Wolf Brother",
+          "author": "Michelle Paver",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Chronicles of Ancient Darkness",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Words of Radiance",
+          "author": "Brandon Sanderson",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Stormlight Archive",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Yumi and the Nightmare Painter",
+          "author": "Brandon Sanderson",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Hoid's Travails",
+          "seriesIndex": 2
+        }
       ]
     },
     {
       "id": "adult",
       "label": "Adult Level",
-      "count": 24,
+      "count": 38,
       "books": [
-        { "title": "The Book of Mormon: Another Testament of Jesus Christ", "author": "Joseph Smith Jr.", "rating": 5, "have_to_read": true, "review": null },
-        { "title": "Speaker for the Dead", "author": "Orson Scott Card", "rating": 5, "have_to_read": true, "review": "My new favorite book. Amazing" },
-        { "title": "Dune", "author": "Frank Herbert", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "The Three-Body Problem", "author": "Cixin Liu", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "Red Rising", "author": "Pierce Brown", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "War Dogs", "author": "Greg Bear", "rating": 3, "have_to_read": false, "review": null },
-        { "title": "Band of Brothers", "author": "Stephen E. Ambrose", "rating": 5, "have_to_read": false, "review": "Not a boring read by any means. Interesting to see how far the US military has come in ethics and standards of war since WWII" },
-        { "title": "The Fires of Vengeance (The Burning #2)", "author": "Evan Winter", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "The Rage of Dragons (The Burning #1)", "author": "Evan Winter", "rating": 5, "have_to_read": false, "review": "Violent and a bit dark but you have to love the underdog story. Warning: one sexy part" },
-        { "title": "The Screwtape Letters", "author": "C.S. Lewis", "rating": 5, "have_to_read": true, "review": "Amazingly written and thought through. C.S. Lewis was one of a kind" },
-        { "title": "The Bourne Identity", "author": "Robert Ludlum", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "The Alloy of Law (Mistborn #4)", "author": "Brandon Sanderson", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "The Great Hunt (The Wheel of Time #2)", "author": "Robert Jordan", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "The Lost Metal (Mistborn #7)", "author": "Brandon Sanderson", "rating": 5, "have_to_read": false, "review": null },
-        { "title": "The Dark Forest (Remembrance of Earth's Past #2)", "author": "Cixin Liu", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Wind and Truth (The Stormlight Archive #5)", "author": "Brandon Sanderson", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Shadows of Self (Mistborn #5)", "author": "Brandon Sanderson", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "How to Talk So Little Kids Will Listen", "author": "Joanna Faber", "rating": 5, "have_to_read": true, "review": null },
-        { "title": "The Runelords: The Sum of All Men", "author": "David Farland", "rating": 5, "have_to_read": false, "review": "Fantastic story" },
-        { "title": "Brotherhood of the Wolf (Runelords #2)", "author": "David Farland", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "League of Dragons (Temeraire #9)", "author": "Naomi Novik", "rating": 3, "have_to_read": false, "review": null },
-        { "title": "Magician: Master (The Riftwar Saga #2)", "author": "Raymond E. Feist", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "The Shadow of What Was Lost (The Licanius Trilogy #1)", "author": "James Islington", "rating": 4, "have_to_read": false, "review": null },
-        { "title": "Empire of Silence (The Sun Eater #1)", "author": "Christopher Ruocchio", "rating": 3, "have_to_read": false, "review": "Great movement and changes" }
+        {
+          "title": "All Systems Red",
+          "author": "Martha Wells",
+          "rating": null,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Murderbot Diaries",
+          "seriesIndex": 1
+        },
+        {
+          "title": "An Echo of Things to Come",
+          "author": "James Islington",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Licanius Trilogy",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Band of Brothers",
+          "author": "Stephen E. Ambrose",
+          "rating": 5,
+          "have_to_read": false,
+          "review": "Not a boring read by any means. Interesting to see how far the US military has come in ethics and standards of war since WWII"
+        },
+        {
+          "title": "Brotherhood of the Wolf",
+          "author": "David Farland",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Runelords",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Dogs of War",
+          "author": "Adrian Tchaikovsky",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Dune",
+          "author": "Frank Herbert",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Empire of Silence",
+          "author": "Christopher Ruocchio",
+          "rating": 3,
+          "have_to_read": false,
+          "review": "Great movement and changes",
+          "series": "The Sun Eater",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Freakonomics",
+          "author": "Steven D. Levitt",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "How Much Land Does a Man Need?",
+          "author": "Leo Tolstoy",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "How to Talk So Little Kids Will Listen",
+          "author": "Joanna Faber",
+          "rating": 5,
+          "have_to_read": true,
+          "review": null
+        },
+        {
+          "title": "How Will You Measure Your Life?",
+          "author": "Clayton M. Christensen",
+          "rating": 5,
+          "have_to_read": true,
+          "review": null
+        },
+        {
+          "title": "Man's Search for Meaning",
+          "author": "Viktor E. Frankl",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Final Empire",
+          "author": "Brandon Sanderson",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Mistborn",
+          "seriesIndex": 1
+        },
+        {
+          "title": "No-Drama Discipline",
+          "author": "Daniel J. Siegel",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Red Mars",
+          "author": "Kim Stanley Robinson",
+          "rating": 2,
+          "have_to_read": false,
+          "review": null,
+          "series": "Mars Trilogy",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Red Rising",
+          "author": "Pierce Brown",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Red Rising Saga",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Shadows of Self",
+          "author": "Brandon Sanderson",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Mistborn",
+          "seriesIndex": 5
+        },
+        {
+          "title": "Speaker for the Dead",
+          "author": "Orson Scott Card",
+          "rating": 5,
+          "have_to_read": true,
+          "review": "My new favorite book. Amazing",
+          "series": "Ender's Saga",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Alloy of Law",
+          "author": "Brandon Sanderson",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Mistborn",
+          "seriesIndex": 4
+        },
+        {
+          "title": "The Bands of Mourning",
+          "author": "Brandon Sanderson",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Mistborn",
+          "seriesIndex": 6
+        },
+        {
+          "title": "The Book of Mormon",
+          "author": "Joseph Smith Jr.",
+          "rating": 5,
+          "have_to_read": true,
+          "review": null
+        },
+        {
+          "title": "The Bourne Identity",
+          "author": "Robert Ludlum",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Jason Bourne",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The City of Brass",
+          "author": "S.A. Chakraborty",
+          "rating": 2,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Daevabad Trilogy",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Dark Forest",
+          "author": "Liu Cixin",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "Remembrance of Earth's Past",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Fires of Vengeance",
+          "author": "Evan Winter",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Burning",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Four Seasons of Marriage",
+          "author": "Gary Chapman",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Hero of Ages",
+          "author": "Brandon Sanderson",
+          "rating": 5,
+          "have_to_read": false,
+          "review": "I like how this book brings a conclusion and you can choose to keep reading the next or end here.",
+          "series": "Mistborn",
+          "seriesIndex": 3
+        },
+        {
+          "title": "The Holy Bible",
+          "author": "Anonymous",
+          "rating": 5,
+          "have_to_read": true,
+          "review": null
+        },
+        {
+          "title": "The Kite Runner",
+          "author": "Khaled Hosseini",
+          "rating": 2,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Lost Metal",
+          "author": "Brandon Sanderson",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Mistborn",
+          "seriesIndex": 7
+        },
+        {
+          "title": "The Rage of Dragons",
+          "author": "Evan Winter",
+          "rating": 5,
+          "have_to_read": false,
+          "review": "Violent and a bit dark but you have to love the underdog story. Warning: one sexy part",
+          "series": "The Burning",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Runelords",
+          "author": "David Farland",
+          "rating": 5,
+          "have_to_read": false,
+          "review": "Fantastic story",
+          "series": "Runelords",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Screwtape Letters",
+          "author": "C.S. Lewis",
+          "rating": 5,
+          "have_to_read": true,
+          "review": "Amazingly written and thought through. C.S. Lewis was one of a kind",
+          "series": "Screwtape",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Self-Driven Child",
+          "author": "William Stixrud",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Shadow of What Was Lost",
+          "author": "James Islington",
+          "rating": 4,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Licanius Trilogy",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Three-Body Problem",
+          "author": "Liu Cixin",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Remembrance of Earth's Past",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Well of Ascension",
+          "author": "Brandon Sanderson",
+          "rating": 5,
+          "have_to_read": false,
+          "review": null,
+          "series": "Mistborn",
+          "seriesIndex": 2
+        },
+        {
+          "title": "War Dogs",
+          "author": "Greg Bear",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null
+        }
       ]
     },
     {
       "id": "donotrecommend",
       "label": "Do Not Recommend",
-      "count": 31,
+      "count": 32,
       "books": [
-        { "title": "The Hitchhiker's Guide to the Galaxy", "author": "Douglas Adams", "rating": 2, "have_to_read": false, "review": null },
-        { "title": "Red Mars", "author": "Kim Stanley Robinson", "rating": 2, "have_to_read": false, "review": null },
-        { "title": "The City of Brass", "author": "S.A. Chakraborty", "rating": 2, "have_to_read": false, "review": null },
-        { "title": "The Kite Runner", "author": "Khaled Hosseini", "rating": 2, "have_to_read": false, "review": null },
-        { "title": "The Warded Man (Demon Cycle #1)", "author": "Peter V. Brett", "rating": 1, "have_to_read": false, "review": "book about demons and rapists. for whatever reason most of the men just can't keep it in their pants. story could have been so good." },
-        { "title": "Divergent", "author": "Veronica Roth", "rating": 3, "have_to_read": false, "review": null },
-        { "title": "The Forever War", "author": "Joe Haldeman", "rating": 3, "have_to_read": false, "review": "Interesting book in the time dilation aspect but half has to do with sex and sexuality which I don't care much for. And the characters seem monochrome." },
-        { "title": "Everfair", "author": "Nisi Shawl", "rating": 1, "have_to_read": false, "review": "Not my cup of tea" },
-        { "title": "A Game of Thrones", "author": "George R.R. Martin", "rating": 1, "have_to_read": false, "review": null },
-        { "title": "Feed", "author": "M.T. Anderson", "rating": 2, "have_to_read": false, "review": null },
-        { "title": "The Way of Shadows", "author": "Brent Weeks", "rating": 1, "have_to_read": false, "review": null },
-        { "title": "A Gathering of Shadows", "author": "V.E. Schwab", "rating": 1, "have_to_read": false, "review": null },
-        { "title": "Bones of the Dragon", "author": "Margaret Weis, Tracy Hickman", "rating": 2, "have_to_read": false, "review": null },
-        { "title": "Songs of the Dead (The Strata Wars #1)", "author": "Brandon Sanderson", "rating": 2, "have_to_read": false, "review": "First Brandon sanderson book I don't like. Finished the whole thing and just though \"what\"." },
-        { "title": "A Game of Thrones: The Graphic Novel, Vol. 1", "author": "Daniel Abraham", "rating": 1, "have_to_read": false, "review": null },
-        { "title": "Infinity Son (Infinity Cycle #1)", "author": "Adam Silvera", "rating": 1, "have_to_read": false, "review": null },
-        { "title": "Furies of Calderon (Codex Alera #1)", "author": "Jim Butcher", "rating": 1, "have_to_read": false, "review": null },
-        { "title": "Hawksong (The Kiesha'ra #1)", "author": "Amelia Atwater-Rhodes", "rating": 1, "have_to_read": false, "review": null },
-        { "title": "The High King's Tomb (Green Rider #3)", "author": "Kristen Britain", "rating": 1, "have_to_read": false, "review": "First two books were good but this crashed and burned" },
-        { "title": "There Is No Antimemetics Division", "author": "qntm", "rating": 2, "have_to_read": false, "review": "didn't get to far in, just not my cup of tea sure others will like it." },
-        { "title": "Tigana", "author": "Guy Gavriel Kay", "rating": 1, "have_to_read": false, "review": null },
-        { "title": "Black Sun (Between Earth and Sky #1)", "author": "Rebecca Roanhorse", "rating": 1, "have_to_read": false, "review": null },
-        { "title": "The Blacktongue Thief (Blacktongue #1)", "author": "Christopher Buehlman", "rating": 1, "have_to_read": false, "review": null },
-        { "title": "To Shape a Dragon's Breath (Nampeshiweisit #1)", "author": "Moniquill Blackgoose", "rating": 1, "have_to_read": false, "review": "could have been good" },
-        { "title": "Children of Earth and Sky", "author": "Guy Gavriel Kay", "rating": 1, "have_to_read": false, "review": null },
-        { "title": "A Darker Shade of Magic (Shades of Magic #1)", "author": "V.E. Schwab", "rating": 2, "have_to_read": false, "review": null },
-        { "title": "Dragon Pearl (Thousand Worlds #1)", "author": "Yoon Ha Lee", "rating": 1, "have_to_read": false, "review": null },
-        { "title": "The Ashfire King (The Sandsea Trilogy #2)", "author": "Chelsea Abdullah", "rating": 2, "have_to_read": false, "review": null },
-        { "title": "Dragonflight (Dragonriders of Pern #1)", "author": "Anne McCaffrey", "rating": 2, "have_to_read": false, "review": null },
-        { "title": "The Armored Saint (The Sacred Throne #1)", "author": "Myke Cole", "rating": 1, "have_to_read": false, "review": null },
-        { "title": "The Subtle Art of Not Giving a F*ck", "author": "Mark Manson", "rating": 2, "have_to_read": false, "review": null }
+        {
+          "title": "A Broken Blade",
+          "author": "Melissa Blair",
+          "rating": 1,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Halfling Saga",
+          "seriesIndex": 1
+        },
+        {
+          "title": "A Darker Shade of Magic",
+          "author": "V.E. Schwab",
+          "rating": 2,
+          "have_to_read": false,
+          "review": null,
+          "series": "Shades of Magic",
+          "seriesIndex": 1
+        },
+        {
+          "title": "A Game of Thrones: The Graphic Novel, Vol. 1",
+          "author": "Daniel Abraham",
+          "rating": 1,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "A Game of Thrones",
+          "author": "George R.R. Martin",
+          "rating": 1,
+          "have_to_read": false,
+          "review": null,
+          "series": "A Song of Ice and Fire",
+          "seriesIndex": 1
+        },
+        {
+          "title": "A Gathering of Shadows",
+          "author": "V.E. Schwab",
+          "rating": 1,
+          "have_to_read": false,
+          "review": null,
+          "series": "Shades of Magic",
+          "seriesIndex": 2
+        },
+        {
+          "title": "Black Sun",
+          "author": "Rebecca Roanhorse",
+          "rating": 1,
+          "have_to_read": false,
+          "review": null,
+          "series": "Between Earth and Sky",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Bones of the Dragon",
+          "author": "Margaret Weis",
+          "rating": 2,
+          "have_to_read": false,
+          "review": null,
+          "series": "Dragonships of Vindras",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Children of Earth and Sky",
+          "author": "Guy Gavriel Kay",
+          "rating": 1,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Divergent",
+          "author": "Veronica Roth",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Dragon Pearl",
+          "author": "Yoon Ha Lee",
+          "rating": 1,
+          "have_to_read": false,
+          "review": null,
+          "series": "Thousand Worlds",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Dragonflight",
+          "author": "Anne McCaffrey",
+          "rating": 2,
+          "have_to_read": false,
+          "review": null,
+          "series": "Dragonriders of Pern",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Everfair",
+          "author": "Nisi Shawl",
+          "rating": 1,
+          "have_to_read": false,
+          "review": "Not my cup of tea"
+        },
+        {
+          "title": "Feed",
+          "author": "M.T. Anderson",
+          "rating": 2,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Furies of Calderon",
+          "author": "Jim Butcher",
+          "rating": 1,
+          "have_to_read": false,
+          "review": null,
+          "series": "Codex Alera",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Songs of the Dead",
+          "author": "Brandon Sanderson",
+          "rating": 2,
+          "have_to_read": false,
+          "review": "First Brandon sanderson book I don't like. Finished the whole thing and just though \"what\".",
+          "series": "The Strata Wars",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Armored Saint",
+          "author": "Myke Cole",
+          "rating": 1,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Sacred Throne",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Ashfire King",
+          "author": "Chelsea Abdullah",
+          "rating": 2,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Sandsea Trilogy",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Blacktongue Thief",
+          "author": "Christopher Buehlman",
+          "rating": 1,
+          "have_to_read": false,
+          "review": null,
+          "series": "Blacktongue",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Forever War",
+          "author": "Joe Haldeman",
+          "rating": 3,
+          "have_to_read": false,
+          "review": "Interesting book in the time dilation aspect but half has to do with sex and sexuality which I don't care much for. And the characters seem monochrome."
+        },
+        {
+          "title": "The High King's Tomb",
+          "author": "Kristen Britain",
+          "rating": 1,
+          "have_to_read": false,
+          "review": "First two books were good but this crashed and burned",
+          "series": "Green Rider",
+          "seriesIndex": 3
+        },
+        {
+          "title": "The Hundred Thousand Kingdoms",
+          "author": "N.K. Jemisin",
+          "rating": 1,
+          "have_to_read": false,
+          "review": null,
+          "series": "Inheritance",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Kingdom of Copper",
+          "author": "S.A. Chakraborty",
+          "rating": 1,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Daevabad Trilogy",
+          "seriesIndex": 2
+        },
+        {
+          "title": "The Subtle Art of Not Giving a F*ck",
+          "author": "Mark Manson",
+          "rating": 2,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "The Warded Man",
+          "author": "Peter V. Brett",
+          "rating": 1,
+          "have_to_read": false,
+          "review": "book about demons and rapists. for whatever reason most of the men just can't keep it in their pants. story could have been so good.",
+          "series": "Demon Cycle",
+          "seriesIndex": 1
+        },
+        {
+          "title": "The Way of Shadows",
+          "author": "Brent Weeks",
+          "rating": 1,
+          "have_to_read": false,
+          "review": null,
+          "series": "Night Angel",
+          "seriesIndex": 1
+        },
+        {
+          "title": "There Is No Antimemetics Division",
+          "author": "qntm",
+          "rating": 2,
+          "have_to_read": false,
+          "review": "didn't get to far in, just not my cup of tea sure others will like it."
+        },
+        {
+          "title": "Tigana",
+          "author": "Guy Gavriel Kay",
+          "rating": 1,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "To Shape a Dragon's Breath",
+          "author": "Moniquill Blackgoose",
+          "rating": 1,
+          "have_to_read": false,
+          "review": "could have been good",
+          "series": "Nampeshiweisit",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Demon Copperhead",
+          "author": "Barbara Kingsolver",
+          "rating": 3,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Elatsoe",
+          "author": "Darcie Little Badger",
+          "rating": 2,
+          "have_to_read": false,
+          "review": null
+        },
+        {
+          "title": "Hawksong",
+          "author": "Amelia Atwater-Rhodes",
+          "rating": 1,
+          "have_to_read": false,
+          "review": null,
+          "series": "The Kiesha'ra",
+          "seriesIndex": 1
+        },
+        {
+          "title": "Infinity Son",
+          "author": "Adam Silvera",
+          "rating": 1,
+          "have_to_read": false,
+          "review": null,
+          "series": "Infinity Cycle",
+          "seriesIndex": 1
+        }
       ]
     }
   ]

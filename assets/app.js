@@ -34,6 +34,7 @@
   };
   var ROMAN = ["I", "II", "III", "IV"];
   var HOME_ORDER = ["professional", "junior", "highschool", "adult"];
+  var stackSeq = 0;
 
   var hideBooks = new Set(HIDE_BOOKS.map(function (s) { return s.toLowerCase(); }));
   var hideReview = new Set(HIDE_REVIEW.map(function (s) { return s.toLowerCase(); }));
@@ -90,6 +91,20 @@
         : '<span class="is-empty" aria-hidden="true">☆</span>';
     }
     return out + "</span>";
+  }
+
+  // Series name, normalised for grouping (case-insensitive, ignores a leading "The ").
+  function seriesKeyOf(s) {
+    return String(s || "")
+      .toLowerCase()
+      .replace(/^the\s+/, "")
+      .replace(/[^a-z0-9 ]/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+  function seriesLabel(n) {
+    if (n == null) return "";
+    return Number.isInteger(n) ? String(n) : String(n);
   }
 
   function primaryAuthor(author) {
@@ -149,6 +164,13 @@
             escapeHtml(SHORT_LABEL[catId] || catId) + '</span>' +
         '</figure>' +
         '<div class="card__body">' +
+          (book.series
+            ? '<p class="card__series">' + escapeHtml(book.series) +
+              (book.seriesIndex != null
+                ? ' <span class="card__series-num">#' + escapeHtml(seriesLabel(book.seriesIndex)) + '</span>'
+                : '') +
+              '</p>'
+            : '') +
           '<h3 class="card__title">' + escapeHtml(book.title) + '</h3>' +
           '<p class="card__author">' + escapeHtml(book.author) + '</p>' +
           starsMarkup(book.rating) +
@@ -268,6 +290,76 @@
     }
   }
 
+  /* ---- series stacks (card view only) ----------------------------------- */
+
+  // Walk an already-sorted list and emit singles + stacks. A series with two
+  // or more books on this shelf collapses into one clickable stack, dropped in
+  // at the spot where its first (lowest-numbered) book falls in the sort.
+  function groupForCards(list) {
+    var bySeries = {};
+    list.forEach(function (b) {
+      if (!b.series) return;
+      var k = seriesKeyOf(b.series);
+      (bySeries[k] = bySeries[k] || []).push(b);
+    });
+    var seen = {};
+    var out = [];
+    list.forEach(function (b) {
+      var k = b.series ? seriesKeyOf(b.series) : null;
+      if (k && bySeries[k].length >= 2) {
+        if (seen[k]) return;
+        seen[k] = true;
+        var members = bySeries[k].slice().sort(function (x, y) {
+          var xi = x.seriesIndex == null ? 1e6 : x.seriesIndex;
+          var yi = y.seriesIndex == null ? 1e6 : y.seriesIndex;
+          return xi - yi || titleSortKey(x.title).localeCompare(titleSortKey(y.title));
+        });
+        out.push({ type: "stack", series: members[0].series, books: members });
+      } else {
+        out.push({ type: "single", book: b });
+      }
+    });
+    return out;
+  }
+
+  function stackMarkup(series, books, catId) {
+    var id = "stk-" + (++stackSeq);
+    var lead = books[0];
+    var essential = books.some(function (b) { return b.have_to_read; });
+    var src = coverSrc(lead.title, lead.author);
+    var cover = src
+      ? '<img class="card__cover" src="' + src + '" loading="lazy" decoding="async" ' +
+        'alt="Book cover: ' + escapeHtml(lead.title) + '" ' +
+        'data-title="' + escapeHtml(lead.title) + '" data-author="' + escapeHtml(lead.author) + '">'
+      : placeholderHtml(lead);
+
+    return '' +
+      '<li class="series-stack" data-open="false">' +
+        '<button type="button" class="series-stack__face" aria-expanded="false" aria-controls="' + id + '">' +
+          '<span class="series-stack__layer series-stack__layer--b" aria-hidden="true"></span>' +
+          '<span class="series-stack__layer series-stack__layer--a" aria-hidden="true"></span>' +
+          '<span class="series-stack__front">' +
+            '<span class="card__cover-wrap">' + cover +
+              (essential ? '<span class="series-stack__star" title="Has an essential read" aria-hidden="true">✦</span>' : '') +
+            '</span>' +
+            '<span class="series-stack__meta">' +
+              '<span class="series-stack__eyebrow">Series &middot; ' + books.length + ' books</span>' +
+              '<span class="series-stack__name">' + escapeHtml(series) + '</span>' +
+              '<span class="series-stack__lead">Starts with <em>' + escapeHtml(lead.title) + '</em></span>' +
+              '<span class="series-stack__cta">' +
+                '<span class="series-stack__cta-open">Open the series</span>' +
+                '<span class="series-stack__cta-close">Hide the series</span>' +
+                '<span class="series-stack__chev" aria-hidden="true"> ▾</span>' +
+              '</span>' +
+            '</span>' +
+          '</span>' +
+        '</button>' +
+        '<ul class="series-stack__books" id="' + id + '" hidden>' +
+          books.map(function (b) { return cardMarkup(b, catId); }).join("") +
+        '</ul>' +
+      '</li>';
+  }
+
   function renderCategory() {
     var catId = document.body.dataset.category;
     var cat = CATEGORIES.find(function (c) { return c.id === catId; });
@@ -293,6 +385,21 @@
 
     wireCoverFallback(grid);
 
+    // Expand / collapse a series stack (delegated, survives grid re-renders).
+    grid.addEventListener("click", function (e) {
+      var face = e.target.closest ? e.target.closest(".series-stack__face") : null;
+      if (!face || !grid.contains(face)) return;
+      var stack = face.parentNode;
+      var panel = document.getElementById(face.getAttribute("aria-controls"));
+      var open = stack.dataset.open === "true";
+      stack.dataset.open = open ? "false" : "true";
+      face.setAttribute("aria-expanded", open ? "false" : "true");
+      if (panel) {
+        panel.hidden = open;
+        if (!open) hydrateReviews(panel);
+      }
+    });
+
     function setView(next) {
       view = next === "list" ? "list" : "card";
       grid.dataset.view = view;
@@ -309,9 +416,17 @@
       }
       list = sortBooks(list, sortEl ? sortEl.value : "shelf");
 
-      grid.innerHTML = list.length
-        ? list.map(function (b) { return cardMarkup(b, catId); }).join("")
-        : '<li class="book-grid__empty">No books match this filter yet.</li>';
+      if (!list.length) {
+        grid.innerHTML = '<li class="book-grid__empty">No books match this filter yet.</li>';
+      } else if (view === "card") {
+        grid.innerHTML = groupForCards(list).map(function (g) {
+          return g.type === "stack"
+            ? stackMarkup(g.series, g.books, catId)
+            : cardMarkup(g.book, catId);
+        }).join("");
+      } else {
+        grid.innerHTML = list.map(function (b) { return cardMarkup(b, catId); }).join("");
+      }
       hydrateReviews(grid);
 
       if (countEl) {

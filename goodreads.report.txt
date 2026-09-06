@@ -1,12 +1,13 @@
-Goodreads link report — 2026-09-04T22:59:07.127Z
-0 matched to a direct book page, 1 fall back to a search link
+Goodreads link report — 2026-09-06T03:39:34.440Z
+1 matched to a direct book page, 2 fall back to a search link
 
 Stopped early: Goodreads showed its bot-verification challenge page partway
 through. Re-run `node tools/fetch-goodreads.mjs` later (e.g. tomorrow) to pick
 up more — it only looks up books that are still missing from goodreads.json.
 
 FALL BACK TO SEARCH LINK:
-  - The Business Ethics Field Guide — Brad Agle  (stopped: Goodreads bot-check)
+  - The Business Ethics Field Guide — Brad Agle
+  - Beyond the Deepwoods — Paul Stewart  (stopped: Goodreads bot-check)
 
 MATCHED THIS RUN:
-  (none new)
+  - The Self-Driven Child — William Stixrud  ->  https://www.goodreads.com/book/show/35457692-the-self-driven-child  (8182 ratings)

@@ -111,8 +111,8 @@ Same pattern as covers: only looks up new books (`--force` to redo all), runs
 back to a plain title+author search link instead of a wrong one — see
 `goodreads.report.txt` for which books that applies to.
 
-Goodreads currently has **60 of 120** books matched to their real page; the
-other 60 use the search-link fallback for now (still a working link, just not
+Goodreads currently has **197 of ~236** books matched to their real page; the
+rest use the search-link fallback for now (still a working link, just not
 a guaranteed direct one). That's not a data problem — mid-run, Goodreads
 started showing its bot-verification challenge page, and this tool stops
 cleanly rather than trying to get past that. Just re-run
@@ -135,33 +135,39 @@ Each entry is `"Exact Title::Exact Author"`. Save and reload — no rebuild need
 These came out of the `notes` in `books-data.json`. None of them break the site;
 they're judgment calls that are yours to make.
 
-1. **One- and two-star books, plus anything tagged "do-not-recommend" on
-   Goodreads, live on their own `donotrecommend.html` page instead of a regular
-   shelf.** It isn't listed among the four shelf tiles on the home page —
-   there's a single understated link under them ("See the Do Not Recommends
-   here") instead. This includes ***The Warded Man*** (1 star), the four other
-   2-star books that used to sit quietly on the Adult/High School shelves, and
-   the 8 titles you originally tagged do-not-recommend on Goodreads (those 8
-   have no rating/review data, since that's all Goodreads gave for a
-   do-not-recommend-tagged book).
+1. **Rebuilt from `goodreads_library_current.xlsx` (Sept 2026).** The five
+   Y/blank columns in that sheet — Professional Rec, Adult Level, High School
+   Level, Junior Rec, Do Not Recommend — map straight to the shelves.
+   Did-Not-Finish books and every 1–2★ book go to `donotrecommend.html`
+   regardless of their other columns. The sheet's separate **Recommend** column
+   had no shelf of its own, so those books were slotted onto shelves by your
+   rules: all Sanderson / Feist / Lawhead / Temeraire / Lord of the Rings /
+   King Raven / Grimnir → High School; Green Rider / *The Very Hungry
+   Caterpillar* / *Where the Red Fern Grows* → Junior; *The Four Seasons of
+   Marriage* / *How Much Land Does a Man Need?* / the KJV Bible → Adult. That's
+   why High School is now the biggest shelf by far.
 
-2. **The Holy Bible: King James Version — not on the site.**
-   It's on your Goodreads "have‑to‑read" shelf but was never filed under any of
-   the four shelf categories, so it isn't in `books-data.json` and isn't shown.
-   If you want it, add it to the relevant category's `books` array in
-   `books-data.json` (with `"have_to_read": true`), then run
-   `node tools/fetch-covers.mjs`.
+2. **Series show as stacks in card view.** Any shelf with two or more books from
+   the same series (read from the `(Series, #N)` part of the Goodreads title)
+   collapses them into one "stack of cards" — series name and first book on the
+   face, click to fan the whole series open. List view stays a flat list with
+   the series name shown in each row's details. Grouping is per shelf, so a
+   series split across two shelves stacks separately on each.
 
-3. ***The Little Prince* — no rating.** You read it but never starred it, so its
+3. **The Holy Bible: King James Version — now on the Adult shelf** (`"have_to_read": true`),
+   placed there as one of the Recommend-column books. Move or duplicate it in
+   `books-data.json` if you'd rather it sat elsewhere.
+
+4. ***The Little Prince* — no rating.** You read it but never starred it, so its
    card shows the cover, title, and author with **no stars** (rather than an
    empty zero‑star row). Nothing to fix; just so you know why it looks different.
 
-4. **Truncated reviews.** Goodreads cut off a couple of your longer reviews
+5. **Truncated reviews.** Goodreads cut off a couple of your longer reviews
    (e.g. *Die with Zero*). The site trims the "(truncated by Goodreads)" marker
    and ends the quote with an ellipsis. If you want the full text, paste it into
    that book's `review` in `books-data.json` and run `node tools/build-data.mjs`.
 
-5. **Adding a new shelf like `donotrecommend`:** give its books a new `id` in
+6. **Adding a new shelf like `donotrecommend`:** give its books a new `id` in
    `books-data.json`, add a matching entry to `SHORT_LABEL` in `assets/app.js`
    (used for card badges), add a `.badge--<id>` color in `assets/styles.css`,
    and copy one of the shelf `.html` files as a starting point. Leave it out of

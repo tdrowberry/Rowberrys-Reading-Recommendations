@@ -621,6 +621,179 @@ body[data-page="about"] {
 }
 
 /* -----------------------------------------------------------------------------
+   Series name line on a card (card view: eyebrow above the title;
+   list view: inline in the details row)
+   ---------------------------------------------------------------------------- */
+.card__series {
+  margin: 0;
+  font-family: var(--font-head);
+  font-size: .72rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--burgundy);
+  line-height: 1.2;
+}
+.card__series-num { color: var(--ink-soft); }
+.book-grid[data-view="list"] .card__series {
+  flex: none;
+  font-size: .66rem;
+  color: var(--ink-soft);
+  margin-right: .1rem;
+}
+@media (max-width: 560px) {
+  .book-grid[data-view="list"] .card__series { flex-basis: 100%; }
+}
+
+/* -----------------------------------------------------------------------------
+   Series stacks — card view only. A run of same-series books shows as one
+   "stack of cards" you click to fan open.
+   ---------------------------------------------------------------------------- */
+.series-stack { position: relative; }
+
+.series-stack__face {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  padding: 0 9px 9px 0;   /* room for the offset layers to peek out */
+  cursor: pointer;
+}
+.series-stack__front,
+.series-stack__layer {
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--card);
+  transition: transform .14s ease;
+}
+.series-stack__layer {
+  position: absolute;
+  inset: 0 9px 9px 0;
+  z-index: 0;
+  box-shadow: var(--shadow-card);
+}
+.series-stack__layer--a { transform: translate(5px, 5px) rotate(1deg); }
+.series-stack__layer--b {
+  transform: translate(9px, 10px) rotate(2deg);
+  background: var(--paper-deep);
+}
+.series-stack__front {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: .65rem .8rem 1rem;
+  box-shadow: var(--shadow-card);
+}
+.series-stack__face:hover .series-stack__layer--a { transform: translate(7px, 6px) rotate(1.4deg); }
+.series-stack__face:hover .series-stack__layer--b { transform: translate(12px, 13px) rotate(2.7deg); }
+.series-stack__face:hover .series-stack__front { transform: translateY(-2px); }
+.series-stack__face:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: var(--radius); }
+
+.series-stack__front .card__cover-wrap { width: 100%; padding: 0; position: relative; }
+.series-stack__front .card__cover,
+.series-stack__front .card__ph {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  border-radius: 3px;
+  object-position: 50% 22%;
+}
+
+.series-stack__meta {
+  display: flex;
+  flex-direction: column;
+  gap: .18rem;
+  min-width: 0;
+}
+.series-stack__eyebrow {
+  font-family: var(--font-head);
+  font-size: .66rem;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.series-stack__name {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.15;
+  color: var(--green-deep);
+}
+.series-stack__lead {
+  font-size: .82rem;
+  color: var(--ink-soft);
+}
+.series-stack__lead em { font-style: italic; }
+.series-stack__cta {
+  margin-top: .25rem;
+  font-family: var(--font-head);
+  font-size: .78rem;
+  color: var(--burgundy);
+}
+.series-stack__chev { display: inline-block; transition: transform .14s ease; }
+.series-stack__cta-close { display: none; }
+.series-stack__star {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: #3a2a05;
+  display: grid;
+  place-items: center;
+  font-size: .7rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+}
+
+/* expanded */
+.series-stack__books {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+.series-stack[data-open="true"] { grid-column: 1 / -1; }
+.series-stack[data-open="true"] .series-stack__face { padding: 0; height: auto; }
+.series-stack[data-open="true"] .series-stack__layer { display: none; }
+.series-stack[data-open="true"] .series-stack__front {
+  flex-direction: row;
+  align-items: center;
+  gap: .9rem;
+  height: auto;
+  box-shadow: none;
+  border: 0;
+  border-bottom: 1px solid var(--rule);
+  border-radius: 0;
+  padding: 0 0 .75rem;
+  margin-bottom: 1.6rem;
+}
+.series-stack[data-open="true"] .series-stack__front:hover { transform: none; }
+.series-stack[data-open="true"] .series-stack__front .card__cover-wrap { width: 56px; flex: none; }
+.series-stack[data-open="true"] .series-stack__lead { display: none; }
+.series-stack[data-open="true"] .series-stack__cta-open { display: none; }
+.series-stack[data-open="true"] .series-stack__cta-close { display: inline; }
+.series-stack[data-open="true"] .series-stack__chev { transform: rotate(180deg); }
+.series-stack[data-open="true"] .series-stack__books {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--col, 210px), 1fr));
+  gap: clamp(1.4rem, 3.5vw, 2.4rem) clamp(1rem, 3vw, 1.8rem);
+}
+@media (max-width: 620px) {
+  .series-stack[data-open="true"] .series-stack__books { gap: 1.6rem 1rem; }
+}
+
+/* -----------------------------------------------------------------------------
    "Essential Read" treatment — gold, and only here
    ---------------------------------------------------------------------------- */
 .card.is-essential {

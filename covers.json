@@ -1,9 +1,24 @@
 {
+  "1984::george orwell": {
+    "cover_i": 8745958
+  },
+  "a broken blade::melissa blair": {
+    "cover_i": 14839701
+  },
   "a crown of swords (the wheel of time #7)::robert jordan": {
+    "cover_i": 10293497
+  },
+  "a crown of swords::robert jordan": {
     "cover_i": 10293497
   },
   "a darker shade of magic (shades of magic #1)::v.e. schwab": {
     "cover_i": 7410930
+  },
+  "a darker shade of magic::v.e. schwab": {
+    "cover_i": 7410930
+  },
+  "a darkness at sethanon::raymond e. feist": {
+    "cover_i": 9885634
   },
   "a game of thrones: the graphic novel, vol. 1::daniel abraham": {
     "cover_i": 14646189
@@ -20,8 +35,23 @@
   "age of myth (the legends of the first empire #1)::michael j. sullivan": {
     "cover_i": 13048123
   },
+  "age of myth::michael j. sullivan": {
+    "cover_i": 13048123
+  },
+  "age of swords::michael j. sullivan": {
+    "cover_i": 10630545
+  },
+  "age of war::michael j. sullivan": {
+    "cover_i": 10630542
+  },
+  "akata warrior::nnedi okorafor": {
+    "cover_i": 9322955
+  },
   "akata witch::nnedi okorafor": {
     "cover_i": 7129360
+  },
+  "akata woman::nnedi okorafor": {
+    "cover_i": 10961398
   },
   "alcatraz versus the evil librarians::brandon sanderson": {
     "cover_i": 14658065
@@ -38,19 +68,49 @@
   "alien arcana (starship's mage #4)::glynn stewart": {
     "cover_i": 10293399
   },
+  "alien arcana::glynn stewart": {
+    "cover_i": 10293399
+  },
+  "all systems red::martha wells": {
+    "cover_i": 9157148
+  },
+  "an echo of things to come::james islington": {
+    "cover_i": 9256414
+  },
+  "animal farm::george orwell": {
+    "cover_i": 11261770
+  },
+  "annihilation::jeff vandermeer": {
+    "cover_i": 8408974
+  },
+  "arcanum unbounded::brandon sanderson": {
+    "cover_i": 14658368
+  },
   "as a man thinketh::james allen": {
     "cover_i": 6268048
   },
   "ascendant (songs of chaos #1)::michael r. miller": {
     "cover_i": 10455571
   },
+  "ascendant::michael r. miller": {
+    "cover_i": 10455571
+  },
   "assassin's apprentice / royal assassin (farseer trilogy #1-2)::robin hobb": {
     "cover_i": 13554301
+  },
+  "assassin's apprentice / royal assassin::robin hobb": {
+    "cover_i": 13554301
+  },
+  "assassin's quest::robin hobb": {
+    "cover_i": 368112
   },
   "atomic habits::james clear": {
     "cover_i": 12539702
   },
   "awakening (infinity blade #1)::brandon sanderson": {
+    "cover_i": 13262227
+  },
+  "awakening::brandon sanderson": {
     "cover_i": 13262227
   },
   "band of brothers::stephen e. ambrose": {
@@ -59,20 +119,56 @@
   "bastille vs. the evil librarians::brandon sanderson": {
     "cover_i": 14838622
   },
+  "beyond the deepwoods::paul stewart": {
+    "cover_i": 244428
+  },
   "binti::nnedi okorafor": {
     "cover_i": 8441703
+  },
+  "black powder war::naomi novik": {
+    "cover_i": 7101721
   },
   "black sun (between earth and sky #1)::rebecca roanhorse": {
     "cover_i": 10183208
   },
+  "black sun::rebecca roanhorse": {
+    "cover_i": 10183208
+  },
+  "blood of tyrants::naomi novik": {
+    "cover_i": 7564034
+  },
+  "bones of the dragon::margaret weis": {
+    "cover_i": 6655951
+  },
   "bones of the dragon::margaret weis, tracy hickman": {
     "cover_i": 6655951
+  },
+  "braiding sweetgrass::robin wall kimmerer": {
+    "cover_i": 7281575
+  },
+  "brave new world::aldous huxley": {
+    "cover_i": 8231823
+  },
+  "brisingr::christopher paolini": {
+    "cover_i": 2411585
   },
   "brotherhood of the wolf (runelords #2)::david farland": {
     "cover_i": 604170
   },
+  "brotherhood of the wolf::david farland": {
+    "cover_i": 604170
+  },
+  "catching fire::suzanne collins": {
+    "cover_i": 12878880
+  },
   "changeling (the oddmire #1)::william ritter": {
     "cover_i": 8769916
+  },
+  "changeling::william ritter": {
+    "cover_i": 8769916
+  },
+  "charlotte's web::e.b. white": {
+    "cover_i": 4792394
   },
   "child of the dark prophecy::t.a. barron": {
     "cover_i": 259985
@@ -80,11 +176,23 @@
   "children of earth and sky::guy gavriel kay": {
     "cover_i": 13085667
   },
+  "crucible of gold::naomi novik": {
+    "cover_i": 10230267
+  },
   "death's end (remembrance of earth's past #3)::cixin liu": {
+    "cover_i": 7893958
+  },
+  "death's end::liu cixin": {
     "cover_i": 7893958
   },
   "deepest, darkest (the oddmire #3)::william ritter": {
     "cover_i": 13491668
+  },
+  "deepest, darkest::william ritter": {
+    "cover_i": 13491668
+  },
+  "demon copperhead::barbara kingsolver": {
+    "cover_i": 13141227
   },
   "die with zero::bill perkins": {
     "cover_i": 10433791
@@ -92,16 +200,34 @@
   "divergent::veronica roth": {
     "cover_i": 13274634
   },
+  "dogs of war::adrian tchaikovsky": {
+    "cover_i": 8264704
+  },
   "dragon champion (age of fire #1)::e.e. knight": {
+    "cover_i": 295208
+  },
+  "dragon champion::e.e. knight": {
     "cover_i": 295208
   },
   "dragon pearl (thousand worlds #1)::yoon ha lee": {
     "cover_i": 8795002
   },
+  "dragon pearl::yoon ha lee": {
+    "cover_i": 8795002
+  },
   "dragonflight (dragonriders of pern #1)::anne mccaffrey": {
     "cover_i": 10306696
   },
+  "dragonflight::anne mccaffrey": {
+    "cover_i": 10306696
+  },
+  "dragonslayer::duncan m. hamilton": {
+    "cover_i": 10109115
+  },
   "duel at araluen (ranger's apprentice: the royal ranger #3)::john flanagan": {
+    "cover_i": 9315170
+  },
+  "duel at araluen::john flanagan": {
     "cover_i": 9315170
   },
   "dune::frank herbert": {
@@ -110,14 +236,38 @@
   "elantris::brandon sanderson": {
     "cover_i": 14658083
   },
+  "elatsoe::darcie little badger": {
+    "cover_i": 10431444
+  },
+  "eldest::christopher paolini": {
+    "cover_i": 12848701
+  },
   "ember falls (the green ember #2)::s.d. smith": {
     "cover_i": 8257991
+  },
+  "ember falls::s.d. smith": {
+    "cover_i": 8257991
+  },
+  "empire of ivory::naomi novik": {
+    "cover_i": 212549
   },
   "empire of silence (the sun eater #1)::christopher ruocchio": {
     "cover_i": 13278787
   },
+  "empire of silence::christopher ruocchio": {
+    "cover_i": 13278787
+  },
+  "ender's game::orson scott card": {
+    "cover_i": 12996033
+  },
+  "eragon::christopher paolini": {
+    "cover_i": 13921600
+  },
   "everfair::nisi shawl": {
     "cover_i": 8757185
+  },
+  "everyone communicates, few connect::john c. maxwell": {
+    "cover_i": 9880925
   },
   "extreme ownership::jocko willink": {
     "cover_i": 12835042
@@ -125,17 +275,47 @@
   "feed::m.t. anderson": {
     "cover_i": 6254568
   },
+  "first rider's call::kristen britain": {
+    "cover_i": 475936
+  },
   "forward the foundation::isaac asimov": {
     "cover_i": 9300894
   },
+  "found::sarah prineas": {
+    "cover_i": 6389485
+  },
+  "foundation and empire::isaac asimov": {
+    "cover_i": 9300695
+  },
+  "foundation::isaac asimov": {
+    "cover_i": 14612610
+  },
   "frankenstein: the 1818 text::mary shelley": {
+    "cover_i": 7267770
+  },
+  "frankenstein::mary wollstonecraft shelley": {
     "cover_i": 7267770
   },
   "furies of calderon (codex alera #1)::jim butcher": {
     "cover_i": 284243
   },
+  "furies of calderon::jim butcher": {
+    "cover_i": 284243
+  },
+  "gatefather::orson scott card": {
+    "cover_i": 9317145
+  },
+  "green rider::kristen britain": {
+    "cover_i": 6683145
+  },
   "hand of mars (starship's mage #2)::glynn stewart": {
     "cover_i": 10293397
+  },
+  "hand of mars::glynn stewart": {
+    "cover_i": 10293397
+  },
+  "harry potter and the order of the phoenix::j.k. rowling": {
+    "cover_i": 15158666
   },
   "harry potter and the philosopher's stone::j.k. rowling": {
     "cover_i": 15155833
@@ -143,11 +323,26 @@
   "hawksong (the kiesha'ra #1)::amelia atwater-rhodes": {
     "cover_i": 244303
   },
+  "hawksong::amelia atwater-rhodes": {
+    "cover_i": 244303
+  },
   "hidden potential::adam grant": {
     "cover_i": 14445208
   },
+  "hidden potential::adam m. grant": {
+    "cover_i": 14445208
+  },
+  "his majesty's dragon::naomi novik": {
+    "cover_i": 8191809
+  },
+  "home::nnedi okorafor": {
+    "cover_i": 8503955
+  },
   "hood::stephen r. lawhead": {
     "cover_i": 539660
+  },
+  "how much land does a man need?::leo tolstoy": {
+    "cover_i": 104052
   },
   "how to know a person::david brooks": {
     "cover_i": 14445297
@@ -155,14 +350,38 @@
   "how to talk so little kids will listen::joanna faber": {
     "cover_i": 13601804
   },
+  "how will you measure your life?::clayton m. christensen": {
+    "cover_i": 8847058
+  },
   "in the hall of the dragon king::stephen r. lawhead": {
     "cover_i": 483543
+  },
+  "in the land of the everliving::stephen r. lawhead": {
+    "cover_i": 10180939
+  },
+  "in the region of the summer stars::stephen r. lawhead": {
+    "cover_i": 8566579
   },
   "infinity son (infinity cycle #1)::adam silvera": {
     "cover_i": 9258824
   },
+  "infinity son::adam silvera": {
+    "cover_i": 9258824
+  },
   "into the wild (warriors #1)::erin hunter": {
     "cover_i": 9336598
+  },
+  "into the wild::erin hunter": {
+    "cover_i": 9336598
+  },
+  "isles of the emberdark::brandon sanderson": {
+    "cover_i": 15228811
+  },
+  "judgment of mars::glynn stewart": {
+    "cover_i": 8427170
+  },
+  "knight of the silver circle::duncan m. hamilton": {
+    "cover_i": 10153265
   },
   "last gate of the emperor::kwame mbalia": {
     "cover_i": 10943161
@@ -170,11 +389,32 @@
   "league of dragons (temeraire #9)::naomi novik": {
     "cover_i": 9142301
   },
+  "league of dragons::naomi novik": {
+    "cover_i": 9142301
+  },
+  "lord of chaos::robert jordan": {
+    "cover_i": 182398
+  },
+  "lost::sarah prineas": {
+    "cover_i": 6422880
+  },
   "magician: apprentice::raymond e. feist": {
     "cover_i": 15169259
   },
   "magician: master (the riftwar saga #2)::raymond e. feist": {
     "cover_i": 8770815
+  },
+  "magician: master::raymond e. feist": {
+    "cover_i": 8770815
+  },
+  "magyk::angie sage": {
+    "cover_i": 488367
+  },
+  "man's search for meaning::viktor e. frankl": {
+    "cover_i": 11203708
+  },
+  "mockingjay::suzanne collins": {
+    "cover_i": 12646459
   },
   "mossflower (redwall #2)::brian jacques": {
     "cover_i": 234848
@@ -182,7 +422,16 @@
   "mossflower::brian jacques": {
     "cover_i": 234848
   },
+  "no-drama discipline::daniel j. siegel": {
+    "cover_i": 12740392
+  },
+  "north! or be eaten::andrew peterson": {
+    "cover_i": 14420624
+  },
   "on the edge of the dark sea of darkness (wingfeather saga #1)::andrew peterson": {
+    "cover_i": 2733867
+  },
+  "on the edge of the dark sea of darkness::andrew peterson": {
     "cover_i": 2733867
   },
   "palace of stone::shannon hale": {
@@ -191,25 +440,70 @@
   "pawn of prophecy (the belgariad #1)::david eddings": {
     "cover_i": 1000455
   },
+  "pawn of prophecy::david eddings": {
+    "cover_i": 1000455
+  },
+  "prelude to foundation::isaac asimov": {
+    "cover_i": 12816973
+  },
   "princess academy::shannon hale": {
     "cover_i": 844492
   },
   "race to the sun::rebecca roanhorse": {
     "cover_i": 9261764
   },
+  "ready player one::ernest cline": {
+    "cover_i": 8737626
+  },
   "red mars::kim stanley robinson": {
     "cover_i": 382552
+  },
+  "red prophet::orson scott card": {
+    "cover_i": 9315058
   },
   "red rising::pierce brown": {
     "cover_i": 7316188
   },
+  "redemption::brandon sanderson": {
+    "cover_i": 14838635
+  },
   "redwall::brian jacques": {
     "cover_i": 2325082
+  },
+  "rhythm of war::brandon sanderson": {
+    "cover_i": 14658361
+  },
+  "river::erin hunter": {
+    "cover_i": 9391258
+  },
+  "scarlet::stephen r. lawhead": {
+    "cover_i": 10202865
+  },
+  "scorpion mountain::john flanagan": {
+    "cover_i": 11339623
+  },
+  "second foundation::isaac asimov": {
+    "cover_i": 9261324
+  },
+  "shadow speaker::nnedi okorafor": {
+    "cover_i": 7337011
   },
   "shadows of self (mistborn #5)::brandon sanderson": {
     "cover_i": 14658321
   },
+  "shadows of self::brandon sanderson": {
+    "cover_i": 14658321
+  },
+  "silverthorn::raymond e. feist": {
+    "cover_i": 1005966
+  },
+  "slaves of socorro::john flanagan": {
+    "cover_i": 10082576
+  },
   "songs of the dead (the strata wars #1)::brandon sanderson": {
+    "cover_i": 15237276
+  },
+  "songs of the dead::brandon sanderson": {
     "cover_i": 15237276
   },
   "speaker for the dead::orson scott card": {
@@ -217,6 +511,9 @@
   },
   "starship's mage::glynn stewart": {
     "cover_i": 8565294
+  },
+  "stonefather::orson scott card": {
+    "cover_i": 6945687
   },
   "sunreach::brandon sanderson": {
     "cover_i": 14837512
@@ -233,16 +530,34 @@
   "the alchemist::paulo coelho": {
     "cover_i": 11556106
   },
+  "the alchemyst::michael scott": {
+    "cover_i": 244765
+  },
   "the alloy of law (mistborn #4)::brandon sanderson": {
+    "cover_i": 14658081
+  },
+  "the alloy of law::brandon sanderson": {
     "cover_i": 14658081
   },
   "the armored saint (the sacred throne #1)::myke cole": {
     "cover_i": 10106223
   },
+  "the armored saint::myke cole": {
+    "cover_i": 10106223
+  },
   "the ashfire king (the sandsea trilogy #2)::chelsea abdullah": {
     "cover_i": 14853410
   },
+  "the ashfire king::chelsea abdullah": {
+    "cover_i": 14853410
+  },
+  "the bands of mourning::brandon sanderson": {
+    "cover_i": 14658335
+  },
   "the barren grounds (the misewa saga #1)::david a. robertson": {
+    "cover_i": 10517246
+  },
+  "the barren grounds::david alexander robertson": {
     "cover_i": 10517246
   },
   "the black cauldron::lloyd alexander": {
@@ -251,7 +566,16 @@
   "the blacktongue thief (blacktongue #1)::christopher buehlman": {
     "cover_i": 10622593
   },
+  "the blacktongue thief::christopher buehlman": {
+    "cover_i": 10622593
+  },
+  "the bone house::stephen r. lawhead": {
+    "cover_i": 8227209
+  },
   "the book of mormon: another testament of jesus christ::joseph smith jr.": {
+    "cover_i": 8321086
+  },
+  "the book of mormon::joseph smith jr.": {
     "cover_i": 8321086
   },
   "the book of three::lloyd alexander": {
@@ -266,6 +590,9 @@
   "the burning bridge (ranger's apprentice #2)::john flanagan": {
     "cover_i": 110517
   },
+  "the burning bridge::john flanagan": {
+    "cover_i": 110517
+  },
   "the chronicles of narnia::c.s. lewis": {
     "cover_i": 9321656
   },
@@ -275,16 +602,49 @@
   "the dark forest (remembrance of earth's past #2)::cixin liu": {
     "cover_i": 10526598
   },
+  "the dark forest::liu cixin": {
+    "cover_i": 10526598
+  },
   "the dark talent::brandon sanderson": {
     "cover_i": 7898972
   },
+  "the darke toad::angie sage": {
+    "cover_i": 14595770
+  },
+  "the dragon reborn::robert jordan": {
+    "cover_i": 603239
+  },
+  "the eye of minds::james dashner": {
+    "cover_i": 8111904
+  },
   "the eye of the world (the wheel of time #1)::robert jordan": {
+    "cover_i": 980232
+  },
+  "the eye of the world::robert jordan": {
     "cover_i": 980232
   },
   "the fatal tree (bright empires #5)::stephen r. lawhead": {
     "cover_i": 8471502
   },
+  "the fatal tree::stephen r. lawhead": {
+    "cover_i": 8471502
+  },
+  "the fellowship of the ring::j.r.r. tolkien": {
+    "cover_i": 14627060
+  },
+  "the final empire::brandon sanderson": {
+    "cover_i": 14658160
+  },
+  "the fires of heaven::robert jordan": {
+    "cover_i": 603821
+  },
+  "the fires of merlin::t.a. barron": {
+    "cover_i": 283830
+  },
   "the fires of vengeance (the burning #2)::evan winter": {
+    "cover_i": 10535816
+  },
+  "the fires of vengeance::evan winter": {
     "cover_i": 10535816
   },
   "the forever war::joe haldeman": {
@@ -293,7 +653,34 @@
   "the forgotten sisters (princess academy #3)::shannon hale": {
     "cover_i": 7347156
   },
+  "the forgotten sisters::shannon hale": {
+    "cover_i": 7347156
+  },
+  "the four seasons of marriage::gary chapman": {
+    "cover_i": 1785367
+  },
+  "the frugal wizard's handbook for surviving medieval england::brandon sanderson": {
+    "cover_i": 14642561
+  },
+  "the game of lives::james dashner": {
+    "cover_i": 14409140
+  },
+  "the gate thief::orson scott card": {
+    "cover_i": 9317169
+  },
+  "the ghostfaces::john flanagan": {
+    "cover_i": 8458281
+  },
+  "the giver::lois lowry": {
+    "cover_i": 8352502
+  },
+  "the giving tree::shel silverstein": {
+    "cover_i": 8981758
+  },
   "the great hunt (the wheel of time #2)::robert jordan": {
+    "cover_i": 182352
+  },
+  "the great hunt::robert jordan": {
     "cover_i": 182352
   },
   "the green ember::s.d. smith": {
@@ -302,7 +689,13 @@
   "the hero of ages (mistborn #3)::brandon sanderson": {
     "cover_i": 14658094
   },
+  "the hero of ages::brandon sanderson": {
+    "cover_i": 14658094
+  },
   "the high king's tomb (green rider #3)::kristen britain": {
+    "cover_i": 1413208
+  },
+  "the high king's tomb::kristen britain": {
     "cover_i": 1413208
   },
   "the hitchhiker's guide to the galaxy::douglas adams": {
@@ -311,14 +704,41 @@
   "the hobbit::j.r.r. tolkien": {
     "cover_i": 14627509
   },
+  "the holy bible::anonymous": {
+    "cover_i": 3352930
+  },
+  "the hundred thousand kingdoms::n.k. jemisin": {
+    "cover_i": 7716902
+  },
+  "the hunger games::suzanne collins": {
+    "cover_i": 12646537
+  },
+  "the hunters::john flanagan": {
+    "cover_i": 8371404
+  },
+  "the icebound land::john flanagan": {
+    "cover_i": 6994817
+  },
   "the innovator's dilemma::clayton m. christensen": {
     "cover_i": 9274687
+  },
+  "the innovator's solution::clayton m. christensen": {
+    "cover_i": 834812
   },
   "the invaders (brotherband chronicles #2)::john flanagan": {
     "cover_i": 8475816
   },
+  "the invaders::john flanagan": {
+    "cover_i": 8475816
+  },
   "the kite runner::khaled hosseini": {
     "cover_i": 14846827
+  },
+  "the last olympian::rick riordan": {
+    "cover_i": 6624107
+  },
+  "the lightning thief::rick riordan": {
+    "cover_i": 7239831
   },
   "the little prince::antoine de saint-exupéry": {
     "cover_i": 10746692
@@ -332,7 +752,16 @@
   "the lost gate (mither mages #1)::orson scott card": {
     "cover_i": 9315051
   },
+  "the lost gate::orson scott card": {
+    "cover_i": 9315051
+  },
+  "the lost hero::rick riordan": {
+    "cover_i": 12848687
+  },
   "the lost metal (mistborn #7)::brandon sanderson": {
+    "cover_i": 14658507
+  },
+  "the lost metal::brandon sanderson": {
     "cover_i": 14658507
   },
   "the lost years of merlin::t.a. barron": {
@@ -341,13 +770,31 @@
   "the magic thief::sarah prineas": {
     "cover_i": 8690062
   },
+  "the many lives of stephen leeds::brandon sanderson": {
+    "cover_i": 14658320
+  },
   "the maze runner::james dashner": {
     "cover_i": 10464801
+  },
+  "the memory police::yōko ogawa": {
+    "cover_i": 15223719
+  },
+  "the monster in the hollows::andrew peterson": {
+    "cover_i": 7731712
+  },
+  "the nethergrim::matthew jobin": {
+    "cover_i": 7306347
   },
   "the night masquerade (binti #3)::nnedi okorafor": {
     "cover_i": 8542534
   },
+  "the night masquerade::nnedi okorafor": {
+    "cover_i": 8542534
+  },
   "the outcasts (brotherband chronicles #1)::john flanagan": {
+    "cover_i": 7624074
+  },
+  "the outcasts::john flanagan": {
     "cover_i": 7624074
   },
   "the princess and the goblin::george macdonald": {
@@ -356,23 +803,65 @@
   "the rage of dragons (the burning #1)::evan winter": {
     "cover_i": 8753945
   },
+  "the rage of dragons::evan winter": {
+    "cover_i": 8753945
+  },
+  "the red fox clan::john flanagan": {
+    "cover_i": 8575366
+  },
   "the return of the king::j.r.r. tolkien": {
     "cover_i": 14627062
+  },
+  "the rithmatist::brandon sanderson": {
+    "cover_i": 14658106
+  },
+  "the royal ranger::john flanagan": {
+    "cover_i": 11209225
   },
   "the ruins of gorlan (ranger's apprentice #1)::john flanagan": {
     "cover_i": 6401507
   },
+  "the ruins of gorlan::john flanagan": {
+    "cover_i": 6401507
+  },
+  "the rule of thoughts::james dashner": {
+    "cover_i": 10291508
+  },
   "the runelords: the sum of all men::david farland": {
+    "cover_i": 603662
+  },
+  "the runelords::david farland": {
     "cover_i": 603662
   },
   "the screwtape letters::c.s. lewis": {
     "cover_i": 14496183
   },
+  "the self-driven child::william stixrud": {
+    "cover_i": 8805007
+  },
+  "the seven songs of merlin::t.a. barron": {
+    "cover_i": 259657
+  },
+  "the shadow lamp::stephen r. lawhead": {
+    "cover_i": 7946676
+  },
   "the shadow of what was lost (the licanius trilogy #1)::james islington": {
     "cover_i": 8471205
   },
+  "the shadow of what was lost::james islington": {
+    "cover_i": 8471205
+  },
+  "the shadow rising::robert jordan": {
+    "cover_i": 603240
+  },
   "the skin map (bright empires #1)::stephen r. lawhead": {
     "cover_i": 6460557
+  },
+  "the skin map::stephen r. lawhead": {
+    "cover_i": 6460557
+  },
+  "the spirit well::stephen r. lawhead": {
+    "cover_i": 8943653
   },
   "the stardust thief::chelsea abdullah": {
     "cover_i": 13515766
@@ -386,23 +875,50 @@
   "the sword and the flame (the dragon king #3)::stephen r. lawhead": {
     "cover_i": 169326
   },
+  "the sword and the flame::stephen r. lawhead": {
+    "cover_i": 169326
+  },
   "the three-body problem::cixin liu": {
+    "cover_i": 9157544
+  },
+  "the three-body problem::liu cixin": {
     "cover_i": 9157544
   },
   "the tombs of atuan::ursula k. le guin": {
     "cover_i": 6633403
   },
+  "the two towers::j.r.r. tolkien": {
+    "cover_i": 14627564
+  },
   "the unready queen (the oddmire #2)::william ritter": {
     "cover_i": 10443626
   },
+  "the unready queen::william ritter": {
+    "cover_i": 10443626
+  },
+  "the very hungry caterpillar::eric carle": {
+    "cover_i": 7835968
+  },
   "the warded man (demon cycle #1)::peter v. brett": {
+    "cover_i": 6394990
+  },
+  "the warded man::peter v. brett": {
     "cover_i": 6394990
   },
   "the warden and the wolf king (wingfeather saga #4)::andrew peterson": {
     "cover_i": 7881488
   },
+  "the warden and the wolf king::andrew peterson": {
+    "cover_i": 7881488
+  },
   "the warlords of nin (the dragon king #2)::stephen r. lawhead": {
     "cover_i": 169325
+  },
+  "the warlords of nin::stephen r. lawhead": {
+    "cover_i": 169325
+  },
+  "the way of kings::brandon sanderson": {
+    "cover_i": 14658316
   },
   "the way of shadows::brent weeks": {
     "cover_i": 6306862
@@ -410,11 +926,20 @@
   "the well of ascension (mistborn #2)::brandon sanderson": {
     "cover_i": 14658341
   },
+  "the well of ascension::brandon sanderson": {
+    "cover_i": 14658341
+  },
   "there is no antimemetics division::qntm": {
     "cover_i": 11457905
   },
   "think again: the power of knowing what you don't know::adam grant": {
     "cover_i": 10470266
+  },
+  "think again::adam m. grant": {
+    "cover_i": 10470266
+  },
+  "throne of jade::naomi novik": {
+    "cover_i": 211936
   },
   "tigana::guy gavriel kay": {
     "cover_i": 477417
@@ -425,14 +950,32 @@
   "to shape a dragon's breath (nampeshiweisit #1)::moniquill blackgoose": {
     "cover_i": 13200842
   },
+  "to shape a dragon's breath::moniquill blackgoose": {
+    "cover_i": 13200842
+  },
+  "tongues of serpents::naomi novik": {
+    "cover_i": 6452163
+  },
   "tress of the emerald sea::brandon sanderson": {
     "cover_i": 13143232
+  },
+  "tuck::stephen r. lawhead": {
+    "cover_i": 8738973
   },
   "unbroken::laura hillenbrand": {
     "cover_i": 6668103
   },
+  "victory of eagles::naomi novik": {
+    "cover_i": 6419701
+  },
   "voice of mars (starship's mage #3)::glynn stewart": {
     "cover_i": 10293398
+  },
+  "voice of mars::glynn stewart": {
+    "cover_i": 10293398
+  },
+  "wakers::orson scott card": {
+    "cover_i": 13290442
   },
   "war dogs::greg bear": {
     "cover_i": 9791354
@@ -440,16 +983,37 @@
   "warbreaker::brandon sanderson": {
     "cover_i": 14658347
   },
+  "where the red fern grows::wilson rawls": {
+    "cover_i": 7996608
+  },
   "wild born (spirit animals #1)::brandon mull": {
+    "cover_i": 9395674
+  },
+  "wild born::brandon mull": {
     "cover_i": 9395674
   },
   "wild magic (immortals #1)::tamora pierce": {
     "cover_i": 1316474
   },
+  "wild magic::tamora pierce": {
+    "cover_i": 1316474
+  },
   "wind and truth (the stormlight archive #5)::brandon sanderson": {
     "cover_i": 14836765
   },
+  "wind and truth::brandon sanderson": {
+    "cover_i": 14836765
+  },
+  "wolf brother::michelle paver": {
+    "cover_i": 33070
+  },
   "words of radiance (the stormlight archive #2)::brandon sanderson": {
     "cover_i": 14658334
+  },
+  "words of radiance::brandon sanderson": {
+    "cover_i": 14658334
+  },
+  "yumi and the nightmare painter::brandon sanderson": {
+    "cover_i": 13989845
   }
 }
